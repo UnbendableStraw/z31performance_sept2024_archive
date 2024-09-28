@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="../../../../favicon.png">
+<link rel="stylesheet" href="../../../../style/reset.css">
+<link rel="stylesheet" href="../../../../style/main.css">
+<link rel="stylesheet" href="../../../../assets/styles/z31performance.css">
+<script src="../../../../js/header-rollup-554.js"></script>
+<link rel="stylesheet" href="../../../../style/post.css">
+
+<link rel="canonical" href="page2.html">
+<meta property="og:image" content="/assets/images/z31p-facebook.png">
+<title>How to use a Z32 ECU in a Z31 VG30ET with NIStune - Z31 Performance</title>
+<meta name="description" content="">
+</head>
+<body id="vb-page-body" class="l-desktop page104 vb-page view-mode logged-out" itemscope itemtype="http://schema.org/ItemPage">
+<script>vBulletin.Responsive.Debounce.checkBrowserSize();</script>
+<div id="outer-wrapper">
+<div id="wrapper">
+<header class="b-top-background__header-mainnav-subnav"><div class="b-top-background__header-mainnav"><div id="header" class="noselect"><div class="header-cell"><div class="site-logo header-edit-box"><a href="../../../../index.html"><img src="../../../../image/full/image_1650.png" alt="Logo" title="Powered by vBulletin"></a></div></div><div class="toolbar"><ul class="h-right"><li class="search-container"><form id="searchForm" action="/search" class="h-left" method="get"><div class="h-left"><div class="search-box h-clearfix"><div class="search-term-container"><input type="text" name="q" placeholder="Search" class="search-term b-form-input__input b-form-input__input--shadow"></div><button type="submit" id="btnSearch" class="search-btn" title="Search"><span class="b-icon b-icon__search"></span></button></div></div></form></li></ul></div></div></div></header>
+<nav class="breadcrumbs-wrapper">
+<ul id="breadcrumbs" class="h-clearfix" itemprop="breadcrumb">
+<li class="crumb">
+<a class="crumb-link h-flex-valign-center" href="../../../../index.html">
+<span class="b-icon b-icon__home" title="Home"></span>
+</a></li>
+<li class="crumb">
+<span class="b-icon b-icon__chevron-right--gray separator"></span>
+<a class="crumb-link" href="../../../z31-performance-upgrade-forums.html">Z31 Performance/Upgrades</a></li>
+<li class="crumb">
+<span class="b-icon b-icon__chevron-right--gray separator"></span>
+<a class="crumb-link" href="../../engine-management.html">Engine Management</a></li>
+</ul>
+</nav>
+<div id="content">
+<div class="canvas-layout-container">
+<div id="canvas-layout-full" class="canvas-layout">
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+<div class="canvas-widget-list section-2 h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+<div class="b-module canvas-widget default-widget page-title-widget widget-no-header-buttons widget-no-border">
+<div class="widget-header h-clearfix">
+<div class="module-title h-left">
+<h1 class="main-title hide-on-editmode">How to use a Z32 ECU in a Z31 VG30ET with NIStune</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+<div class="canvas-widget-list section-0 h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+<div class="b-module canvas-widget default-widget conversation-content-widget forum-conversation-content-widget widget-tabs widget-no-border widget-no-header-buttons axd-container">
+<div class="widget-content tab widget-tabs-panel">
+<div id="thread-view-tab" class="conversation-view conversation-thread-view">
+<div class="h-right h-margin-top-l h-margin-bottom-m">
+<div class="pagenav-container h-clearfix noselect pagenav-container--no-margin">
+<div class="pagenav h-right">
+<a class="b-button b-button--secondary" href="../12708-how-to-use-a-z32-ecu-in-a-z31-vg30et-with-nistune.html">Previous</a>
+<a class="b-button b-button--narrow b-button--secondary" href="../12708-how-to-use-a-z32-ecu-in-a-z31-vg30et-with-nistune.html">1</a>
+<a class="b-button b-button--narrow b-button--primary page" href="page2.html">2</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page3.html">3</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page4.html">4</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page5.html">5</a>
+<a class="b-button b-button--secondary" href="page3.html">Next</a>
+</div>
+</div>
+</div>
+<div class="conversation-content">
+<ul class="conversation-list list-container h-clearfix thread-view">
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post288399" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<span class="b-avatar b-avatar--m b-avatar--thread h-margin-bottom-l"><img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Guest's Avatar" title="Guest's Avatar"></span>
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Bernardd</strong>
+</div>
+<div class="b-meter h-margin-top-m">
+<div class="b-meter__bar"></div>
+<div class="b-meter__bar"></div>
+<div class="b-meter__bar"></div>
+<div class="b-meter__bar"></div>
+<div class="b-meter__bar"></div>
+<div class="b-meter__bar"></div>
+<div class="b-meter__bar"></div>
+<div class="b-meter__bar"></div>
+<div class="b-meter__bar"></div>
+<div class="b-meter__bar"></div>
+</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post288399">#16</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2011-05-17T17:49:30">05-17-2011, 12:49 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">`
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post368626" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post368626">#17</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2012-05-28T02:28:51">05-27-2012, 09:28 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Old post, I know but might go with the Z32 ECU with Nistune instead of the Microtech ECU.<br><br><br>
+Where's Bernard?
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post368672" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Careless" title="Careless">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Careless</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>13279</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post368672">#18</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2012-05-28T14:57:21">05-28-2012, 09:57 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">i think he left.<br><br>
+Rick, here's some information on adapting the Z32 ecu to an RB25. It's not the same as what you're after- but you can find out certain information about how different signals on the Z32 ecu operate, such as the fuel temp sensor, and the tps and whatnot.<br><br>
+<a href="../../../../ext/nistune.com/docs/Z32_ECU_Modifications_Direct_R33_Plugin-V6.pdf">http://nistune.com/docs/Z32_ECU_Modific … n%20V6.pdf</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post368677" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="akurtzer57" title="akurtzer57">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>akurtzer57</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>205</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post368677">#19</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2012-05-28T15:55:58">05-28-2012, 10:55 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">I have a J30 that still have ecu, coils, ignititor, maf I cut the harness didn't think would ever need. If interested can make you package deal for very cheap.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474052" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post474052">#20</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2014-12-19T01:29:09">12-18-2014, 08:29 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">again updating an old thread.<br><br>
+Back to the Z32 ecu.... I've been doing more research lately and acquiring parts to finally do the swap. For coils I'm going with LS2 coils. Nistune now has a feature pack to run flex fuel capabilities. One of the main things is whether to use a draw through Z32 MAF or HPX blow through MAF sensor in 2.5&quot; intercooler pipe before the throttle body. What's the most power people have made with the Z32 MAF in a draw through setup like stock and single turbo?
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474057" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../image/avatar/default_avatar_large.png" alt="Augustus Maximus" title="Augustus Maximus">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Augustus Maximus</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1739</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post474057">#21</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2014-12-19T04:57:56">12-18-2014, 11:57 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">You could go with the VE30DE ECU. It can do everything the Z32 can without the need for two 02 sensors. Runs the same CAS and coil packs etc. Supported by Nistune as well.
+</div>
+</div>
+<div class="post-signature restore">Cha iro<br><br>
+enjoy building it yourself.<br>
+if it fails, fuck it.<br>
+at least you gave it a whirl.</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474060" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../image/avatar/default_avatar_large.png" alt="G-E" title="G-E">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>G-E</strong>
+</div>
+<div class="usertitle">Junior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>6320</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post474060">#22</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2014-12-19T05:53:55">12-19-2014, 12:53 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Rick, how do you plan to run the cas for the z32?
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474063" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post474063">#23</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2014-12-19T07:04:10">12-19-2014, 02:04 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Just like Satan did. But he went with AEM ecu back when he had the VG in his car. You take the sensor and slotted disk out of the stock Z32 CAS and fit it in the Z31 distributor.<br><br><br>
+As far as the MAF I'm most likely going with an HPX-N1 MAF in a 3&quot; tube suck through setup before the turbo intake
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474111" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post474111">#24</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2014-12-21T07:23:06">12-21-2014, 02:23 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Z32 CAS in Z31 distributor complete. Took awhile to do but not too hard. Just need a dremel with a cut off wheel and a grinder.<br><br><br>
+This shows the opening I had to cut out. I grinded off some of the actual sensor but it not necessary. That one was just used for fitting.<br><br>
+20141221_002017.jpg<br><br><br><br><br>
+20141220_195723.jpg<br><br><br><br>
+This is the spacer that the z31 disc sits on. I had to make the diameter smaller so it wouldn't hit the Z32 CAS. After on the left extra one on the right<br><br>
+20141221_001353.jpg<br><br><br><br>
+This is the top spacer/rotor mount for the z31. I cut it in half and reduced the diameter. I cut it in half since the distributor cap and rotor isn't needed and I'm gonna use the custom aluminum cap that I had made. After on the left, before on the right<br><br>
+20141221_001421.jpg<br><br><br><br><br><br><br>
+Z
+<div class="b-post-attachments h-clearfix">
+Attached Files
+<ul>
+<li class="b-post-attachments__item h-left h-clear">
+<span class="b-icon b-icon__doc--gray"></span>
+<span class="h-wordwrap">20141220_213516.jpg</span>
+<span>(89.5 KB)</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474112" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post474112">#25</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2014-12-21T07:46:21">12-21-2014, 02:46 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Parts used. Z32 CAS and disc.<br><br>
+dist parts.jpg<br><br><br><br><br><br><br>
+This shows the position of the Z32 disc mounted in the Z31 distributor at TDC in relation to the CAS. It rotates counter clockwise.I got this position by inserting the Z32 CAS in a Z32 engine when it was all lined up at TDC and marking the position of the disc. Hope it works.<br><br>
+dist TDC.jpg<br><br><br><br><br><br>
+clearance of Z31 lower disc mount that I grinded down so it wouldn't hit the sensor. Used one original mounting hole to secure the CAS and drilled one out (screw not in yet)<br><br>
+dist lower spacer clearance.jpg<br><br><br><br><br><br><br>
+Used 2 washers on main shaft on top of the bearing to get the proper height and a screw and small stud (seen in the back behind the shaft) and some washers to get the right height for the CAS.<br><br>
+20141221_002305.jpg<br><br><br><br>
+All done. Gonna see if it works by trying it out with the Microtech first.<br><br>
+20141221_001943.jpg<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+Z
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474255" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post474255">#26</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2014-12-24T23:26:55">12-24-2014, 06:26 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">It works!<br>
+I hooked up the newly modified z31 distributor with z32 CAS and changed the settings in the Microtech to read the Z32 cas , and it works fine. TDC mark from previous post was spot on.<br><br>
+Also ordered this MAF housing to use with the HPX-N1 MAF<br><br>
+20141229_142444.jpg<br><br>
+<a href="http://m.ebay.com/itm/251517090720?nav=SEARCH">http://m.ebay.com/itm/251517090720?nav=SEARCH</a><br><br><br>
+Microtech going up for sale soon.
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474263" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="shromy" title="shromy">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>shromy</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2189</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post474263">#27</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2014-12-25T15:15:30">12-25-2014, 10:15 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Awesome! Why not just buy a base plate for the maf and have it welded into your existing piping?
+</div>
+</div>
+<div class="post-signature restore">Hmmm, Whats next?<br>
+Full Size Bronco, smashing shit.<br><br>
+84ZXT</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474266" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post474266">#28</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2014-12-25T18:28:00">12-25-2014, 01:28 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<div class="bbcode_postedby">
+Originally posted by <strong>shromy</strong>
+<a href="../../driveline-aa/8171-tri-tri-hybrid-axle-positioning-spring-cut.html#post8171" title="View Post" class="b-icon b-icon__double-arrow-right--blue animate-scroll">View Post</a>
+</div>
+<div class="message">Awesome! Why not just buy a base plate for the maf and have it welded into your existing piping?</div>
+</div>
+</div>
+</div>Thought about it but I need to redo my intake anyway. Saves some time too.
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474268" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="shromy" title="shromy">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>shromy</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2189</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post474268">#29</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2014-12-25T20:47:08">12-25-2014, 03:47 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Fair enough. Excited to see the results.
+</div>
+</div>
+<div class="post-signature restore">Hmmm, Whats next?<br>
+Full Size Bronco, smashing shit.<br><br>
+84ZXT</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474271" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post474271">#30</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2014-12-26T00:20:00">12-25-2014, 07:20 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="axd axd_last-post">
+</div>
+<div class="restore h-wordwrap" itemprop="text">Trying to find a good deal on LS2 D514A coils. Mixed reviews about the low price ebay coils. Seems like some sellers claim they are original GM or AC Delco coils but they're not. Waiting for a good deal on a used set of 8 original coils.
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="pagenav-container h-clearfix noselect pagenav-container--no-margin">
+<div class="pagenav h-right">
+<a class="b-button b-button--secondary" href="../12708-how-to-use-a-z32-ecu-in-a-z31-vg30et-with-nistune.html">Previous</a>
+<a class="b-button b-button--narrow b-button--secondary" href="../12708-how-to-use-a-z32-ecu-in-a-z31-vg30et-with-nistune.html">1</a>
+<a class="b-button b-button--narrow b-button--primary page" href="page2.html">2</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page3.html">3</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page4.html">4</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page5.html">5</a>
+<a class="b-button b-button--secondary" href="page3.html">Next</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="h-clear"></div>
+</div>
+<footer id="footer"><nav id="footer-tabbar" class="h-clearfix js-shrink-event-parent"><ul class="nav-list h-right js-footer-nav-list h-margin-right-xxl b-comp-menu-horizontal"><li><a href="page2.html#" class="js-footer-go-to-top">Go to top</a></li></ul></nav></footer>
+</div>
+<div id="footer-copyright"><div id="footer-vb-copyright">Copyright © 2006–<script>document.write((new Date()).getFullYear());</script>. All rights reserved. <a href="../../../../privacy.html">Privacy Policy</a></div></div>
+</div>
+<script>(function(){let d=document;d.addEventListener("copy",function(){let s=window.getSelection(),c=d.createElement("div");c.style.position="absolute";c.style.left="-99999px";c.innerHTML=s.toString()+"<br><br>Source: <"+"a href='"+d.location.href+"'>"+d.location.href+"<"+"/a>";d.body.appendChild(c);s.selectAllChildren(c);window.setTimeout(function(){d.body.removeChild(c)},0)});})();</script>
+<script>(function(n){let j=window,v=document,k=atob("eW0="),b=atob("aHR0cHM6Ly9tYy55YW5kZXgucnUvbWV0cmlrYQ==")+atob("L3RhZy5qcw==");if(!(k in j)){j[k]=function(){if(!("a" in j[k])){j[k].a=[];}j[k].a.push(arguments);};}j[k].l=Date.now();for(let i=0;i<v.scripts.length;i++){if(v.scripts[i].src===b){return;}}let e=v.createElement("script");e.async=true;e.src=b;v.head.appendChild(e);let y=atob("Y2xp")+atob("Y2ttYXA="),u=atob("dHJhYw==")+atob("a0xpbmtz"),p=atob("YWNjdXJhdGVUcmFja0JvdW4=")+atob("Y2U=");j[k](n,"init",{[y]:true,[u]:true,[p]:true,});})(98235843);</script>
+<script>(function(){let y=document,z=atob("X2FjaQ==")+atob("Yw=="),e=atob("ZGF0")+atob("YVBy")+atob("b3ZpZGVy"),p=atob("aHR0cHM6Ly93d3cuYWNpbnQubmV0L2FjaS5q")+atob("cw==");window[z]={[e]:10};for(let i=0;i<y.scripts.length;i++){if(y.scripts[i].src===p){return;}}let t=y.createElement("script");t.async=true;t.src=p;y.head.appendChild(t);})();</script>
+</body>
+</html>

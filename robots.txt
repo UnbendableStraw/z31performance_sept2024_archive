@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://z31performance.com/sitemap.xml
+Host: https://z31performance.com

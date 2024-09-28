@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="../../../favicon.png">
+<link rel="stylesheet" href="../../../style/reset.css">
+<link rel="stylesheet" href="../../../style/main.css">
+<link rel="stylesheet" href="../../../assets/styles/z31performance.css">
+<script src="../../../js/header-rollup-554.js"></script>
+<link rel="stylesheet" href="../../../style/post.css">
+
+<link rel="canonical" href="9717-question-on-a-v8-swap.html">
+<meta property="og:image" content="/assets/images/z31p-facebook.png">
+<title>Question on a V8 swap - Z31 Performance</title>
+<meta name="description" content="">
+</head>
+<body id="vb-page-body" class="l-desktop page74 vb-page view-mode logged-out" itemscope itemtype="http://schema.org/ItemPage">
+<script>vBulletin.Responsive.Debounce.checkBrowserSize();</script>
+<div id="outer-wrapper">
+<div id="wrapper">
+<header class="b-top-background__header-mainnav-subnav"><div class="b-top-background__header-mainnav"><div id="header" class="noselect"><div class="header-cell"><div class="site-logo header-edit-box"><a href="../../../index.html"><img src="../../../image/full/image_1650.png" alt="Logo" title="Powered by vBulletin"></a></div></div><div class="toolbar"><ul class="h-right"><li class="search-container"><form id="searchForm" action="/search" class="h-left" method="get"><div class="h-left"><div class="search-box h-clearfix"><div class="search-term-container"><input type="text" name="q" placeholder="Search" class="search-term b-form-input__input b-form-input__input--shadow"></div><button type="submit" id="btnSearch" class="search-btn" title="Search"><span class="b-icon b-icon__search"></span></button></div></div></form></li></ul></div></div></div></header>
+<nav class="breadcrumbs-wrapper">
+<ul id="breadcrumbs" class="h-clearfix" itemprop="breadcrumb">
+<li class="crumb">
+<a class="crumb-link h-flex-valign-center" href="../../../index.html">
+<span class="b-icon b-icon__home" title="Home"></span>
+</a></li>
+<li class="crumb">
+<span class="b-icon b-icon__chevron-right--gray separator"></span>
+<a class="crumb-link" href="../../z31-basics.html">Z31 Basics</a></li>
+<li class="crumb">
+<span class="b-icon b-icon__chevron-right--gray separator"></span>
+<a class="crumb-link" href="../basic-modifications-basic-questions-aka-the-newbie-forum.html">Basic Modifications / Basic Questions - AKA The 'Newbie' Forum</a></li>
+</ul>
+</nav>
+<div id="content">
+<div class="canvas-layout-container">
+<div id="canvas-layout-full" class="canvas-layout">
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+<div class="canvas-widget-list section-2 h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+<div class="b-module canvas-widget default-widget page-title-widget widget-no-header-buttons widget-no-border">
+<div class="widget-header h-clearfix">
+<div class="module-title h-left">
+<h1 class="main-title hide-on-editmode">Question on a V8 swap</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+<div class="canvas-widget-list section-0 h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+<div class="b-module canvas-widget default-widget conversation-content-widget forum-conversation-content-widget widget-tabs widget-no-border widget-no-header-buttons axd-container">
+<div class="widget-content tab widget-tabs-panel">
+<div id="thread-view-tab" class="conversation-view conversation-thread-view">
+<div class="h-right h-margin-top-l h-margin-bottom-m">
+<div class="pagenav-container h-clearfix noselect pagenav-container--no-margin">
+<div class="pagenav h-right">
+<a class="b-button b-button--narrow b-button--primary page" href="9717-question-on-a-v8-swap.html">1</a>
+<a class="b-button b-button--narrow b-button--secondary" href="9717-question-on-a-v8-swap/page2.html">2</a>
+<a class="b-button b-button--narrow b-button--secondary" href="9717-question-on-a-v8-swap/page3.html">3</a>
+<a class="b-button b-button--narrow b-button--secondary" href="9717-question-on-a-v8-swap/page4.html">4</a>
+<a class="b-button b-button--narrow b-button--secondary" href="9717-question-on-a-v8-swap/page5.html">5</a>
+<a class="b-button b-button--secondary" href="9717-question-on-a-v8-swap/page2.html">Next</a>
+</div>
+</div>
+</div>
+<div class="conversation-content">
+<ul class="conversation-list list-container h-clearfix thread-view">
+<li class="b-post h-restore--on-preview b-post--text b-post--first h-left h-clear" itemscope itemtype="http://schema.org/CreativeWork">
+<a id="post9717" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="FallenRev" title="FallenRev">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>FallenRev</strong>
+</div>
+<div class="usertitle">Junior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>21</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="9717-question-on-a-v8-swap.html#post9717">#1
+</a>
+</div>
+<div class="b-media__body">
+<h2 class="b-post__title">Question on a V8 swap</h2>
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T05:28:22">03-02-2010, 12:28 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="axd axd_first-post">
+</div>
+<div class="restore h-wordwrap" itemprop="text">Well, i was considering doing the NA2T on my Z. But then i thought, after i get done with my street driving on it, i'm going to turn it into a pure drag car. Why not go ahead and drop a v8 in it ya know? But my question on this is, how much money and insane effort would it take to do this? Sorry if i overlooked anything about it on the z sites, just couldn't find a good guide on it.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190084" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="bleakdragonmage" title="bleakdragonmage">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>bleakdragonmage</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2093</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="9717-question-on-a-v8-swap.html#post190084">#2</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T05:38:18">03-02-2010, 12:38 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">*sighs* If i were you, i would put on your flamesuit…<br><br><br>
+I will offer some advice… Just go to hybridz.org
+</div>
+</div>
+<div class="post-signature restore"><br><br>
+<b>1988 570zx SS Edition</b><br><br><br>
+<div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<div class="bbcode_postedby">
+Originally posted by <strong>Neil86t</strong>
+</div>
+<div class="message">Just get a slick paint job like mine and its all good. I had a girl that said she wanted to lick my car. She ended up licking my sack…end of story. Bitch ain't gonna lick my car.</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190086" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="six2eight" title="six2eight">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>six2eight</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>324</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="9717-question-on-a-v8-swap.html#post190086">#3</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T05:38:30">03-02-2010, 12:38 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><a href="http://[video=youtube_share;XvaKe-91o60">http://www.youtube.com/watch?v=XvaKe-91o60[/video]]<div class="videocontainer">
+<a class="video-frame" href="https://www.youtube.com/watch?v=XvaKe-91o60" data-vcode="XvaKe-91o60" data-vprovider="youtube_share">
+<div class="videothumbnail">
+<img src="../../../ext/youtube.com/img/desktop/supported_browsers/yt_logo_rgb_light.png" alt="">
+<div class="videothumbnailoverlay"></div>
+</div>
+</a>
+</div></a><br><br><br><br><br>
+who needs a v8 8)
+</div>
+</div>
+<div class="post-signature restore">1984 300zx N/A SF model - sold<br>
+1986 300zx N/A - parted out<br>
+1985 300zx Turbo - parted out<br>
+1986 300zx NA2T - sold!<br>
+1988 300zx Shiro - Sold!<br>
+1988 300zx Shiro - number 43 of 75 Canadian!<br>
+<img src="../../../ext/i121.photobucket.com/albums/o238/six2eight/20150421_210709-Custom-2_zpsgsnwmqwd.jpg" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190090" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="FallenRev" title="FallenRev">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>FallenRev</strong>
+</div>
+<div class="usertitle">Junior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>21</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="9717-question-on-a-v8-swap.html#post190090">#4</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T05:54:17">03-02-2010, 12:54 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<b>six2eight wrote:</b> <div class="videocontainer">
+<a class="video-frame" href="https://www.youtube.com/watch?v=XvaKe-91o60" data-vcode="XvaKe-91o60" data-vprovider="youtube_share">
+<div class="videothumbnail">
+<img src="../../../ext/youtube.com/img/desktop/supported_browsers/yt_logo_rgb_light.png" alt="">
+<div class="videothumbnailoverlay"></div>
+</div>
+</a>
+</div><br><br><br><br><br>
+who needs a v8 8)
+</div>
+</div>
+</div>someone who grew up around v8's and misses it? Might sound sacrilegious to some of you to put a v8 in a z31, but i love my Z and want to make it unique.<br><br>
+EDIT: And thanks bleakdragonmage, i completely overlooked hybridz, my bad.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190091" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="bleakdragonmage" title="bleakdragonmage">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>bleakdragonmage</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2093</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="9717-question-on-a-v8-swap.html#post190091">#5</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T06:01:21">03-02-2010, 01:01 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Hate to tell you, but you might be more unique than most, but there are still a couple of us around that have v8 swapped Z's.<br><br>
+Myself<br>
+Alf<br>
+ChapparelZ<br>
+and i believe someone is even stuffing a 500 Cadillac engine in a Z31, although i forgot his name.<br><br>
+Alf has a mini write-up that covers some stuff.<br><br>
+After you purchase some of the stuff, if you run into any snags, you can PM me and i can help as well.
+</div>
+</div>
+<div class="post-signature restore"><br><br>
+<b>1988 570zx SS Edition</b><br><br><br>
+<div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<div class="bbcode_postedby">
+Originally posted by <strong>Neil86t</strong>
+</div>
+<div class="message">Just get a slick paint job like mine and its all good. I had a girl that said she wanted to lick my car. She ended up licking my sack…end of story. Bitch ain't gonna lick my car.</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190094" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="FallenRev" title="FallenRev">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>FallenRev</strong>
+</div>
+<div class="usertitle">Junior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>21</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="9717-question-on-a-v8-swap.html#post190094">#6</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T06:06:26">03-02-2010, 01:06 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<b>bleakdragonmage wrote:</b> Hate to tell you, but you might be more unique than most, but there are still a couple of us around that have v8 swapped Z's.<br><br>
+Myself<br>
+Alf<br>
+ChapparelZ<br>
+and i believe someone is even stuffing a 500 Cadillac engine in a Z31, although i forgot his name.<br><br>
+Alf has a mini write-up that covers some stuff.<br><br>
+After you purchase some of the stuff, if you run into any snags, you can PM me and i can help as well.
+</div>
+</div>
+</div>Well first off, O_O to the 500 cadillac engine being stuffed in one xD.<br><br>
+And yeah I know people have done it, it would be pretty ignorant to think that it's never been done :lol:<br><br>
+It's going to be a pretty long term project as well, so when I get into it more i'll probably end up PM'ing you about it. Thanks for the help man.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190096" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="bleakdragonmage" title="bleakdragonmage">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>bleakdragonmage</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2093</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="9717-question-on-a-v8-swap.html#post190096">#7</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T06:08:46">03-02-2010, 01:08 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Yea, that was my response. I don't think it will fit, its too big. The exhaust manifolds will probably hand over the frame-rails. But hey, i guess we'll see.
+</div>
+</div>
+<div class="post-signature restore"><br><br>
+<b>1988 570zx SS Edition</b><br><br><br>
+<div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<div class="bbcode_postedby">
+Originally posted by <strong>Neil86t</strong>
+</div>
+<div class="message">Just get a slick paint job like mine and its all good. I had a girl that said she wanted to lick my car. She ended up licking my sack…end of story. Bitch ain't gonna lick my car.</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190099" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="FallenRev" title="FallenRev">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>FallenRev</strong>
+</div>
+<div class="usertitle">Junior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>21</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="9717-question-on-a-v8-swap.html#post190099">#8</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T06:18:59">03-02-2010, 01:18 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">More power to him is all i have to say xD I'm couldn't even imagine trying to wrangle that thing in there.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190100" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="TurboDreams" title="TurboDreams">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>TurboDreams</strong>
+</div>
+<div class="usertitle">Banned</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1127</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="9717-question-on-a-v8-swap.html#post190100">#9</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T06:35:15">03-02-2010, 01:35 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Yeah the Cadillac 500ci has one hell of a world record under it's belt, it's been in the fastest gas internal combustion engine powered car. Would certainly make for a hell of a Z, sounds like it might take some major cutting and maybe even some welding to widen and lengthen the bay.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190104" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="sprtcrazy17" title="sprtcrazy17">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>sprtcrazy17</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1685</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="9717-question-on-a-v8-swap.html#post190104">#10</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T07:10:50">03-02-2010, 02:10 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">That'd be Trbulnt. I am releasing no further details :twisted:
+</div>
+</div>
+<div class="post-signature restore"><img src="../../../ext/i160.photobucket.com/albums/t186/sprtcrazy17/IMG_4243-1-1.jpg" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190105" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="bleakdragonmage" title="bleakdragonmage">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>bleakdragonmage</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2093</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="9717-question-on-a-v8-swap.html#post190105">#11</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T07:17:36">03-02-2010, 02:17 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<b>sprtcrazy17 wrote:</b> That'd be Trbulnt. I am releasing no further details :twisted:
+</div>
+</div>
+</div>He hasn't updated his thread in like 3 weeks. I still don't think it will fit without modifying the frame rails. I could be wrong though… Would be cool to see, but that 500 cadillac is such a big engine.
+</div>
+</div>
+<div class="post-signature restore"><br><br>
+<b>1988 570zx SS Edition</b><br><br><br>
+<div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<div class="bbcode_postedby">
+Originally posted by <strong>Neil86t</strong>
+</div>
+<div class="message">Just get a slick paint job like mine and its all good. I had a girl that said she wanted to lick my car. She ended up licking my sack…end of story. Bitch ain't gonna lick my car.</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190149" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../image/avatar/default_avatar_large.png" alt="Mitchd03" title="Mitchd03">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Mitchd03</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>891</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="9717-question-on-a-v8-swap.html#post190149">#12</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T17:51:25">03-02-2010, 12:51 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Wasn't the caddy 500cui motor in a fwd car?
+</div>
+</div>
+<div class="post-signature restore"><img src="../../../ext/i99.photobucket.com/albums/l306/Mitchd03/mitchd03z31silhouettesig.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190153" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="TurboDreams" title="TurboDreams">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>TurboDreams</strong>
+</div>
+<div class="usertitle">Banned</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1127</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="9717-question-on-a-v8-swap.html#post190153">#13</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T18:22:00">03-02-2010, 01:22 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<b>Mitchd03 wrote:</b> Wasn't the caddy 500cui motor in a fwd car?
+</div>
+</div>
+</div>For the 1970 model year, the Eldorado introduced the new 500 cu in (8.2 l) V8 engine, the largest-ever production V8, rated SAE gross 400 hp (298 kW) and 550 ftÂ·lbf (746 NÂ·m) in 1970, that would be an Eldorado exclusive until it became standard on all full sized Cadillacs in the 1975 model year<br><br>
+El Dorado - FWD<br>
+Fleetwood - RWD<br>
+Deville - RWD<br>
+Calais - RWD<br><br>
+So yes originally it was but it was also found in quite a few RWD cars as well. The weird thing is I'm looking at pics of ElDorado engine bays and the engine is facing forward. Wonder what the curb weight is on these things. They'd make for great drag cars if they were lighter :lol:
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190154" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../image/avatar/avatar127_1.jpeg" alt="Crazy" title="Crazy">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Crazy</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>619</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="9717-question-on-a-v8-swap.html#post190154">#14</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T18:23:51">03-02-2010, 01:23 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">If your going v8 go with the LSX 6.0L VQ9 with the 4L80E auto trans. Turbocharged of coarse.
+</div>
+</div>
+<div class="post-signature restore">Black 1986 300zx Turbo coupe (Chuki)<br>
+http://z31performance.com/showthread…86-Turbo-Coupe<br>
+----------------------------------------------------------------------------------------------------------------<br>
+Pewter 1986 300zx N/A 2 Turbo 2+2 (Chuki)<br>
+http://z31performance.com/showthread…9;s-1986-300zx</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190155" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="TurboDreams" title="TurboDreams">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>TurboDreams</strong>
+</div>
+<div class="usertitle">Banned</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1127</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="9717-question-on-a-v8-swap.html#post190155">#15</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T18:25:22">03-02-2010, 01:25 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="axd axd_last-post">
+</div>
+<div class="restore h-wordwrap" itemprop="text">Only a 6 liter? LS7 7L :nanan?re
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="pagenav-container h-clearfix noselect pagenav-container--no-margin">
+<div class="pagenav h-right">
+<a class="b-button b-button--narrow b-button--primary page" href="9717-question-on-a-v8-swap.html">1</a>
+<a class="b-button b-button--narrow b-button--secondary" href="9717-question-on-a-v8-swap/page2.html">2</a>
+<a class="b-button b-button--narrow b-button--secondary" href="9717-question-on-a-v8-swap/page3.html">3</a>
+<a class="b-button b-button--narrow b-button--secondary" href="9717-question-on-a-v8-swap/page4.html">4</a>
+<a class="b-button b-button--narrow b-button--secondary" href="9717-question-on-a-v8-swap/page5.html">5</a>
+<a class="b-button b-button--secondary" href="9717-question-on-a-v8-swap/page2.html">Next</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="h-clear"></div>
+</div>
+<footer id="footer"><nav id="footer-tabbar" class="h-clearfix js-shrink-event-parent"><ul class="nav-list h-right js-footer-nav-list h-margin-right-xxl b-comp-menu-horizontal"><li><a href="9717-question-on-a-v8-swap.html#" class="js-footer-go-to-top">Go to top</a></li></ul></nav></footer>
+</div>
+<div id="footer-copyright"><div id="footer-vb-copyright">Copyright © 2006–<script>document.write((new Date()).getFullYear());</script>. All rights reserved. <a href="../../../privacy.html">Privacy Policy</a></div></div>
+</div>
+<script>(function(){let d=document;d.addEventListener("copy",function(){let s=window.getSelection(),c=d.createElement("div");c.style.position="absolute";c.style.left="-99999px";c.innerHTML=s.toString()+"<br><br>Source: <"+"a href='"+d.location.href+"'>"+d.location.href+"<"+"/a>";d.body.appendChild(c);s.selectAllChildren(c);window.setTimeout(function(){d.body.removeChild(c)},0)});})();</script>
+<script>(function(n){let j=window,v=document,k=atob("eW0="),b=atob("aHR0cHM6Ly9tYy55YW5kZXgucnUvbWV0cmlrYQ==")+atob("L3RhZy5qcw==");if(!(k in j)){j[k]=function(){if(!("a" in j[k])){j[k].a=[];}j[k].a.push(arguments);};}j[k].l=Date.now();for(let i=0;i<v.scripts.length;i++){if(v.scripts[i].src===b){return;}}let e=v.createElement("script");e.async=true;e.src=b;v.head.appendChild(e);let y=atob("Y2xp")+atob("Y2ttYXA="),u=atob("dHJhYw==")+atob("a0xpbmtz"),p=atob("YWNjdXJhdGVUcmFja0JvdW4=")+atob("Y2U=");j[k](n,"init",{[y]:true,[u]:true,[p]:true,});})(98235843);</script>
+<script>(function(){let y=document,z=atob("X2FjaQ==")+atob("Yw=="),e=atob("ZGF0")+atob("YVBy")+atob("b3ZpZGVy"),p=atob("aHR0cHM6Ly93d3cuYWNpbnQubmV0L2FjaS5q")+atob("cw==");window[z]={[e]:10};for(let i=0;i<y.scripts.length;i++){if(y.scripts[i].src===p){return;}}let t=y.createElement("script");t.async=true;t.src=p;y.head.appendChild(t);})();</script>
+</body>
+</html>

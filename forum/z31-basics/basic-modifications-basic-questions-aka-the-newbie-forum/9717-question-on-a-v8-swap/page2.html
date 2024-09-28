@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="../../../../favicon.png">
+<link rel="stylesheet" href="../../../../style/reset.css">
+<link rel="stylesheet" href="../../../../style/main.css">
+<link rel="stylesheet" href="../../../../assets/styles/z31performance.css">
+<script src="../../../../js/header-rollup-554.js"></script>
+<link rel="stylesheet" href="../../../../style/post.css">
+
+<link rel="canonical" href="page2.html">
+<meta property="og:image" content="/assets/images/z31p-facebook.png">
+<title>Question on a V8 swap - Z31 Performance</title>
+<meta name="description" content="">
+</head>
+<body id="vb-page-body" class="l-desktop page74 vb-page view-mode logged-out" itemscope itemtype="http://schema.org/ItemPage">
+<script>vBulletin.Responsive.Debounce.checkBrowserSize();</script>
+<div id="outer-wrapper">
+<div id="wrapper">
+<header class="b-top-background__header-mainnav-subnav"><div class="b-top-background__header-mainnav"><div id="header" class="noselect"><div class="header-cell"><div class="site-logo header-edit-box"><a href="../../../../index.html"><img src="../../../../image/full/image_1650.png" alt="Logo" title="Powered by vBulletin"></a></div></div><div class="toolbar"><ul class="h-right"><li class="search-container"><form id="searchForm" action="/search" class="h-left" method="get"><div class="h-left"><div class="search-box h-clearfix"><div class="search-term-container"><input type="text" name="q" placeholder="Search" class="search-term b-form-input__input b-form-input__input--shadow"></div><button type="submit" id="btnSearch" class="search-btn" title="Search"><span class="b-icon b-icon__search"></span></button></div></div></form></li></ul></div></div></div></header>
+<nav class="breadcrumbs-wrapper">
+<ul id="breadcrumbs" class="h-clearfix" itemprop="breadcrumb">
+<li class="crumb">
+<a class="crumb-link h-flex-valign-center" href="../../../../index.html">
+<span class="b-icon b-icon__home" title="Home"></span>
+</a></li>
+<li class="crumb">
+<span class="b-icon b-icon__chevron-right--gray separator"></span>
+<a class="crumb-link" href="../../../z31-basics.html">Z31 Basics</a></li>
+<li class="crumb">
+<span class="b-icon b-icon__chevron-right--gray separator"></span>
+<a class="crumb-link" href="../../basic-modifications-basic-questions-aka-the-newbie-forum.html">Basic Modifications / Basic Questions - AKA The 'Newbie' Forum</a></li>
+</ul>
+</nav>
+<div id="content">
+<div class="canvas-layout-container">
+<div id="canvas-layout-full" class="canvas-layout">
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+<div class="canvas-widget-list section-2 h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+<div class="b-module canvas-widget default-widget page-title-widget widget-no-header-buttons widget-no-border">
+<div class="widget-header h-clearfix">
+<div class="module-title h-left">
+<h1 class="main-title hide-on-editmode">Question on a V8 swap</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+<div class="canvas-widget-list section-0 h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+<div class="b-module canvas-widget default-widget conversation-content-widget forum-conversation-content-widget widget-tabs widget-no-border widget-no-header-buttons axd-container">
+<div class="widget-content tab widget-tabs-panel">
+<div id="thread-view-tab" class="conversation-view conversation-thread-view">
+<div class="h-right h-margin-top-l h-margin-bottom-m">
+<div class="pagenav-container h-clearfix noselect pagenav-container--no-margin">
+<div class="pagenav h-right">
+<a class="b-button b-button--secondary" href="../9717-question-on-a-v8-swap.html">Previous</a>
+<a class="b-button b-button--narrow b-button--secondary" href="../9717-question-on-a-v8-swap.html">1</a>
+<a class="b-button b-button--narrow b-button--primary page" href="page2.html">2</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page3.html">3</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page4.html">4</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page5.html">5</a>
+<a class="b-button b-button--secondary" href="page3.html">Next</a>
+</div>
+</div>
+</div>
+<div class="conversation-content">
+<ul class="conversation-list list-container h-clearfix thread-view">
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190157" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="bleakdragonmage" title="bleakdragonmage">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>bleakdragonmage</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2093</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post190157">#16</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T18:41:27">03-02-2010, 01:41 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<b>Crazy wrote: If your going v8 go with the LSX 6.0L VQ9 with the 4L80E auto trans</b>. Turbocharged of coarse.
+</div>
+</div>
+</div>I Lol'd at this. Oh, and its not &quot;VQ9&quot; its &quot;LQ9&quot;.<br><br>
+As for the LS7, i would go with a LQ9,LS6 intake setup, and cam swap. Much cheaper than a ls7, hell, its cheaper than a LS1 and will flow better.
+</div>
+</div>
+<div class="post-signature restore"><br><br>
+<b>1988 570zx SS Edition</b><br><br><br>
+<div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<div class="bbcode_postedby">
+Originally posted by <strong>Neil86t</strong>
+</div>
+<div class="message">Just get a slick paint job like mine and its all good. I had a girl that said she wanted to lick my car. She ended up licking my sack…end of story. Bitch ain't gonna lick my car.</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190165" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="TurboDreams" title="TurboDreams">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>TurboDreams</strong>
+</div>
+<div class="usertitle">Banned</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1127</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post190165">#17</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T19:32:49">03-02-2010, 02:32 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">LS swaps aren't supposed to be cheap, if you wanted cheap you'd swap in a VG30E, you can pick them up for $250 on ebay :lol:<br><br>
+displacement FTW: more of it = more low end = better spool up = wider powerband at same hp.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190172" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="bleakdragonmage" title="bleakdragonmage">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>bleakdragonmage</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2093</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post190172">#18</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-02T20:11:16">03-02-2010, 03:11 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<b>TurboDreams wrote:</b> LS swaps aren't supposed to be cheap, if you wanted cheap you'd swap in a VG30E, you can pick them up for $250 on ebay :lol:<br><br>
+displacement FTW: more of it = more low end = better spool up = wider powerband at same hp.
+</div>
+</div>
+</div>Yea, but there are cheaper alternatives. Only difference between the LS and LQ is the block. LS is aluminum and LQ is iron. Other than that, they are basically the same.
+</div>
+</div>
+<div class="post-signature restore"><br><br>
+<b>1988 570zx SS Edition</b><br><br><br>
+<div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<div class="bbcode_postedby">
+Originally posted by <strong>Neil86t</strong>
+</div>
+<div class="message">Just get a slick paint job like mine and its all good. I had a girl that said she wanted to lick my car. She ended up licking my sack…end of story. Bitch ain't gonna lick my car.</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190493" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../image/avatar/default_avatar_large.png" alt="DeleriousZ" title="DeleriousZ">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>DeleriousZ</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>6874</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post190493">#19</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-04T20:54:19">03-04-2010, 03:54 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">ugh…
+</div>
+</div>
+<div class="post-signature restore"><img src="../../../../ext/i.imgur.com/XVF0pSu.png" border="0" alt=""> <img src="../../../../ext/img1.wikia.nocookie.net/__cb20130519220431/theamazingworldofgumball/images/e/e6/Permabanned.gif" border="0" alt=""><br>
+1988 300zxt. gt35, stance, etc. <b>Wheels: Varrstoen ES2 18x9.5 et-13 225/40. 18x10.5 et0 245/40</b><br>
+1990 jetta vr6'd</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190502" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="2slick85z31" title="2slick85z31">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>2slick85z31</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1001</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post190502">#20</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-04T22:16:53">03-04-2010, 05:16 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">chevy 350, down stroke it to a 3.0L and twin turbo it i met a guy running this in his camaro and he's running around 800 hp at the crank iirc. running efi and coil on plug. full stad-alone etc. this motor has been in 3 different camaro's from what he's told me and it's bent the frame in 2 out of the 3. Lol so put that in your z and show it off :nanan?re
+</div>
+</div>
+<div class="post-signature restore"><img src="../../../../ext/i282.photobucket.com/albums/kk255/StickySilverTbird_95/Photo08152053_1-1.jpg" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190517" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="FallenRev" title="FallenRev">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>FallenRev</strong>
+</div>
+<div class="usertitle">Junior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>21</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post190517">#21</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-05T01:25:44">03-04-2010, 08:25 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<b>2slick85z31 wrote:</b> chevy 350, down stroke it to a 3.0L and twin turbo it i met a guy running this in his camaro and he's running around 800 hp at the crank iirc. running efi and coil on plug. full stad-alone etc. this motor has been in 3 different camaro's from what he's told me and it's bent the frame in 2 out of the 3. Lol so put that in your z and show it off :nanan?re
+</div>
+</div>
+</div>Was planning on a 350 in the first place so that is nice to hear :-D
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190587" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="pearlstyx" title="pearlstyx">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>pearlstyx</strong>
+</div>
+<div class="usertitle">Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>30</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post190587">#22</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-05T16:20:15">03-05-2010, 11:20 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">if your planning on going full drag with it why choose a z31 with IRS? Both NHRA and IHRA require solid axles if you're running any kind of fast ET's I think the NHRA rule is faster than 10.50. That is fairly slow to have to back half your car for.
+</div>
+</div>
+<div class="post-signature restore">84 turbo 5 speed<br>
+stock turbo with custom 3&quot; o2 elbow.<br>
+schneider 440 lift cams<br>
+schneider valve springs<br>
+3 angle intake, full radius exhaust valves<br>
+3&quot; exhaust<br>
+Cone air filter<br>
+Pathfinder intake without emissions control crap.<br>
+No Ac, power steering, cruise.<br>
+Electric fan<br>
+No IC <u>for now</u><br>
+Stock boost <u>for now</u><br>
+Stock fuel<br>
+zeitronix wideband with datalogger<br>
+kyb's on rear<br>
+Mickey Thompson Sportsman S/T 235/60r15 rear and BFGoodrich Traction T/A 225/60r15 front on stock 84t rims</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190593" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../image/avatar/default_avatar_large.png" alt="michaelp" title="michaelp">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>michaelp</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>9384</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post190593">#23</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-05T17:13:51">03-05-2010, 12:13 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Z31P
+</div>
+</div>
+<div class="post-signature restore">- VG30DET (HE341) 86 300ZX - 1982 280ZX Turbo - Headered NA 1986 300ZX 2+2 - 2000 Xterra -</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190597" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="pearlstyx" title="pearlstyx">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>pearlstyx</strong>
+</div>
+<div class="usertitle">Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>30</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post190597">#24</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-05T18:59:29">03-05-2010, 01:59 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">This is right out of the rule book page 19 under rear end. The NHRA requirements for an IRS are &quot;Must have 360-degree, minimum 1-Inch-wide by 1/4 thick axle retention loop on each axle.&quot; and &quot;Car running 10.99 (*6.99)or quicker that weigh more than 2,000 pounds with independent rear suspension without upper and lower (both) control arms must replace swing axle differential with conventional differential housing assembly (Example 1963-1982 Corvette).
+</div>
+</div>
+<div class="post-signature restore">84 turbo 5 speed<br>
+stock turbo with custom 3&quot; o2 elbow.<br>
+schneider 440 lift cams<br>
+schneider valve springs<br>
+3 angle intake, full radius exhaust valves<br>
+3&quot; exhaust<br>
+Cone air filter<br>
+Pathfinder intake without emissions control crap.<br>
+No Ac, power steering, cruise.<br>
+Electric fan<br>
+No IC <u>for now</u><br>
+Stock boost <u>for now</u><br>
+Stock fuel<br>
+zeitronix wideband with datalogger<br>
+kyb's on rear<br>
+Mickey Thompson Sportsman S/T 235/60r15 rear and BFGoodrich Traction T/A 225/60r15 front on stock 84t rims</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190600" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="TurboDreams" title="TurboDreams">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>TurboDreams</strong>
+</div>
+<div class="usertitle">Banned</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1127</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post190600">#25</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-05T19:57:20">03-05-2010, 02:57 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">When I read those rules all I see is blah blah blah you should have bought a Foxbody.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190604" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="pearlstyx" title="pearlstyx">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>pearlstyx</strong>
+</div>
+<div class="usertitle">Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>30</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post190604">#26</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-05T21:46:07">03-05-2010, 04:46 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">I know it sucks!! thats why i'm sticking with the vg and running street classes so i can save some $ for a full chassis car in the future.<br><br>
+I'm planning on running the UMTR north series this year but probably wont even break into the 12's. OH well It'll be fun none the less!!<br><br>
+AS to the V8 i say do it but don't plan on running 9's legally. Have Fun!
+</div>
+</div>
+<div class="post-signature restore">84 turbo 5 speed<br>
+stock turbo with custom 3&quot; o2 elbow.<br>
+schneider 440 lift cams<br>
+schneider valve springs<br>
+3 angle intake, full radius exhaust valves<br>
+3&quot; exhaust<br>
+Cone air filter<br>
+Pathfinder intake without emissions control crap.<br>
+No Ac, power steering, cruise.<br>
+Electric fan<br>
+No IC <u>for now</u><br>
+Stock boost <u>for now</u><br>
+Stock fuel<br>
+zeitronix wideband with datalogger<br>
+kyb's on rear<br>
+Mickey Thompson Sportsman S/T 235/60r15 rear and BFGoodrich Traction T/A 225/60r15 front on stock 84t rims</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190607" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="FallenRev" title="FallenRev">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>FallenRev</strong>
+</div>
+<div class="usertitle">Junior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>21</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post190607">#27</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-05T22:14:34">03-05-2010, 05:14 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">I'm not going to make it into a drag STRIP car for quite a while. I honestly prefer not having to deal a whole bunch of regulations and such. What transmission that would fit a chevy 350 would fit into the Z without too much modification? Or am i going to have to do shifter location changes and such either way?
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190612" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="New 2 Z" title="New 2 Z">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>New 2 Z</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1219</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post190612">#28</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-05T22:50:45">03-05-2010, 05:50 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<b>FallenRev wrote:</b> Well, i was considering doing the NA2T on my Z. But then i thought, after i get done with my street driving on it, i'm going to turn it into a pure drag car. Why not go ahead and drop a v8 in it ya know? But my question on this is, how much money and insane effort would it take to do this? Sorry if i overlooked anything about it on the z sites, just couldn't find a good guide on it.
+</div>
+</div>
+</div>all you need is a VG30 and a shit load of money.<br><br>
+<a href="http://[video=youtube_share;LzvaMhRTPrE">http://www.youtube.com/watch?v=LzvaMhRTPrE[/video]]<div class="videocontainer">
+<a class="video-frame" href="https://www.youtube.com/watch?v=LzvaMhRTPrE" data-vcode="LzvaMhRTPrE" data-vprovider="youtube_share">
+<div class="videothumbnail">
+<img src="../../../../ext/youtube.com/img/desktop/supported_browsers/yt_logo_rgb_light.png" alt="">
+<div class="videothumbnailoverlay"></div>
+</div>
+</a>
+</div></a><br><br>
+i believe it was said to hold 1,200hp but i have no proof to back that up.
+</div>
+</div>
+<div class="post-signature restore"><br>
+<div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+he gives me shit all the time about the money i spend on my car but he simply doenst understand what type of &quot;high&quot; you get from watching a stock car transform into something alive with as much emotion and feelings as any human.
+</div>
+</div>
+</div><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<div class="bbcode_postedby">
+Originally posted by <strong>PurePontiacKid</strong>
+</div>
+<div class="message">My god… 10 pages and so far he's only pulled the motor out of the donor car, and bought some valvetrain parts for it? way to be proactive guys.</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190625" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Trbulnt" title="Trbulnt">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Trbulnt</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>347</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post190625">#29</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-06T02:51:47">03-05-2010, 09:51 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Well I was going to install the large caddy motor in my car, and have decided to go the 350 sbc route instead. I tried test fitting the caddy motor and while it could be made to fit, it would require far more cutting of the chassis than I want to do to my car. The transmission would have been the cabin! So the caddy Z will have to wait until my next Z car in which I &quot;will&quot; stuff one in a 240Z. In the end the 350 with a manual trans will fit my desire to road race and autocross the car while still being able to go on cruises. Somewhere along the line forced induction will once again be on this car with the V8. I have heard all the Nissan purists statements in regards to a non VG motor in the car and I will say it again. It's &quot;your&quot; car!! Build it how you want and enjoy it.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post190628" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="ZFast88Z" title="ZFast88Z">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>ZFast88Z</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1882</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page2.html#post190628">#30</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2010-03-06T03:17:17">03-05-2010, 10:17 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="axd axd_last-post">
+</div>
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<b>pearlstyx wrote:</b> This is right out of the rule book page 19 under rear end. The NHRA requirements for an IRS are &quot;Must have 360-degree, minimum 1-Inch-wide by 1/4 thick axle retention loop on each axle.&quot; and &quot;Car running 10.99 (*6.99)or quicker that weigh more than 2,000 pounds with independent rear suspension without upper and lower (both) control arms must replace swing axle differential with conventional differential housing assembly (Example 1963-1982 Corvette).
+</div>
+</div>
+</div>Never once have I been stopped from running at an NHRA track because of IRS. There are plenty of people campaigning cars with IRS that run faster then 10.99. Most run at NHRA sponsored tracks, they just dont run NHRA events.
+</div>
+</div>
+<div class="post-signature restore">The bullshit stops, when the <span style="color:#00FF00">GREEN</span> light drops.<br><br>
+Only babies cry about the <span style="color:#0000BF">bottle</span>.</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="pagenav-container h-clearfix noselect pagenav-container--no-margin">
+<div class="pagenav h-right">
+<a class="b-button b-button--secondary" href="../9717-question-on-a-v8-swap.html">Previous</a>
+<a class="b-button b-button--narrow b-button--secondary" href="../9717-question-on-a-v8-swap.html">1</a>
+<a class="b-button b-button--narrow b-button--primary page" href="page2.html">2</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page3.html">3</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page4.html">4</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page5.html">5</a>
+<a class="b-button b-button--secondary" href="page3.html">Next</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="h-clear"></div>
+</div>
+<footer id="footer"><nav id="footer-tabbar" class="h-clearfix js-shrink-event-parent"><ul class="nav-list h-right js-footer-nav-list h-margin-right-xxl b-comp-menu-horizontal"><li><a href="page2.html#" class="js-footer-go-to-top">Go to top</a></li></ul></nav></footer>
+</div>
+<div id="footer-copyright"><div id="footer-vb-copyright">Copyright © 2006–<script>document.write((new Date()).getFullYear());</script>. All rights reserved. <a href="../../../../privacy.html">Privacy Policy</a></div></div>
+</div>
+<script>(function(){let d=document;d.addEventListener("copy",function(){let s=window.getSelection(),c=d.createElement("div");c.style.position="absolute";c.style.left="-99999px";c.innerHTML=s.toString()+"<br><br>Source: <"+"a href='"+d.location.href+"'>"+d.location.href+"<"+"/a>";d.body.appendChild(c);s.selectAllChildren(c);window.setTimeout(function(){d.body.removeChild(c)},0)});})();</script>
+<script>(function(n){let j=window,v=document,k=atob("eW0="),b=atob("aHR0cHM6Ly9tYy55YW5kZXgucnUvbWV0cmlrYQ==")+atob("L3RhZy5qcw==");if(!(k in j)){j[k]=function(){if(!("a" in j[k])){j[k].a=[];}j[k].a.push(arguments);};}j[k].l=Date.now();for(let i=0;i<v.scripts.length;i++){if(v.scripts[i].src===b){return;}}let e=v.createElement("script");e.async=true;e.src=b;v.head.appendChild(e);let y=atob("Y2xp")+atob("Y2ttYXA="),u=atob("dHJhYw==")+atob("a0xpbmtz"),p=atob("YWNjdXJhdGVUcmFja0JvdW4=")+atob("Y2U=");j[k](n,"init",{[y]:true,[u]:true,[p]:true,});})(98235843);</script>
+<script>(function(){let y=document,z=atob("X2FjaQ==")+atob("Yw=="),e=atob("ZGF0")+atob("YVBy")+atob("b3ZpZGVy"),p=atob("aHR0cHM6Ly93d3cuYWNpbnQubmV0L2FjaS5q")+atob("cw==");window[z]={[e]:10};for(let i=0;i<y.scripts.length;i++){if(y.scripts[i].src===p){return;}}let t=y.createElement("script");t.async=true;t.src=p;y.head.appendChild(t);})();</script>
+</body>
+</html>

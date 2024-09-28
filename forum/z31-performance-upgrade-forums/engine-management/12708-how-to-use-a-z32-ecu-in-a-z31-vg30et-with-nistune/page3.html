@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="../../../../favicon.png">
+<link rel="stylesheet" href="../../../../style/reset.css">
+<link rel="stylesheet" href="../../../../style/main.css">
+<link rel="stylesheet" href="../../../../assets/styles/z31performance.css">
+<script src="../../../../js/header-rollup-554.js"></script>
+<link rel="stylesheet" href="../../../../style/post.css">
+
+<link rel="canonical" href="page3.html">
+<meta property="og:image" content="/assets/images/z31p-facebook.png">
+<title>How to use a Z32 ECU in a Z31 VG30ET with NIStune - Z31 Performance</title>
+<meta name="description" content="">
+</head>
+<body id="vb-page-body" class="l-desktop page104 vb-page view-mode logged-out" itemscope itemtype="http://schema.org/ItemPage">
+<script>vBulletin.Responsive.Debounce.checkBrowserSize();</script>
+<div id="outer-wrapper">
+<div id="wrapper">
+<header class="b-top-background__header-mainnav-subnav"><div class="b-top-background__header-mainnav"><div id="header" class="noselect"><div class="header-cell"><div class="site-logo header-edit-box"><a href="../../../../index.html"><img src="../../../../image/full/image_1650.png" alt="Logo" title="Powered by vBulletin"></a></div></div><div class="toolbar"><ul class="h-right"><li class="search-container"><form id="searchForm" action="/search" class="h-left" method="get"><div class="h-left"><div class="search-box h-clearfix"><div class="search-term-container"><input type="text" name="q" placeholder="Search" class="search-term b-form-input__input b-form-input__input--shadow"></div><button type="submit" id="btnSearch" class="search-btn" title="Search"><span class="b-icon b-icon__search"></span></button></div></div></form></li></ul></div></div></div></header>
+<nav class="breadcrumbs-wrapper">
+<ul id="breadcrumbs" class="h-clearfix" itemprop="breadcrumb">
+<li class="crumb">
+<a class="crumb-link h-flex-valign-center" href="../../../../index.html">
+<span class="b-icon b-icon__home" title="Home"></span>
+</a></li>
+<li class="crumb">
+<span class="b-icon b-icon__chevron-right--gray separator"></span>
+<a class="crumb-link" href="../../../z31-performance-upgrade-forums.html">Z31 Performance/Upgrades</a></li>
+<li class="crumb">
+<span class="b-icon b-icon__chevron-right--gray separator"></span>
+<a class="crumb-link" href="../../engine-management.html">Engine Management</a></li>
+</ul>
+</nav>
+<div id="content">
+<div class="canvas-layout-container">
+<div id="canvas-layout-full" class="canvas-layout">
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+<div class="canvas-widget-list section-2 h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+<div class="b-module canvas-widget default-widget page-title-widget widget-no-header-buttons widget-no-border">
+<div class="widget-header h-clearfix">
+<div class="module-title h-left">
+<h1 class="main-title hide-on-editmode">How to use a Z32 ECU in a Z31 VG30ET with NIStune</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+<div class="canvas-widget-list section-0 h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+<div class="b-module canvas-widget default-widget conversation-content-widget forum-conversation-content-widget widget-tabs widget-no-border widget-no-header-buttons axd-container">
+<div class="widget-content tab widget-tabs-panel">
+<div id="thread-view-tab" class="conversation-view conversation-thread-view">
+<div class="h-right h-margin-top-l h-margin-bottom-m">
+<div class="pagenav-container h-clearfix noselect pagenav-container--no-margin">
+<div class="pagenav h-right">
+<a class="b-button b-button--secondary" href="page2.html">Previous</a>
+<a class="b-button b-button--narrow b-button--secondary" href="../12708-how-to-use-a-z32-ecu-in-a-z31-vg30et-with-nistune.html">1</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page2.html">2</a>
+<a class="b-button b-button--narrow b-button--primary page" href="page3.html">3</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page4.html">4</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page5.html">5</a>
+<a class="b-button b-button--secondary" href="page4.html">Next</a>
+</div>
+</div>
+</div>
+<div class="conversation-content">
+<ul class="conversation-list list-container h-clearfix thread-view">
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474594" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../image/avatar/default_avatar_large.png" alt="Butter" title="Butter">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Butter</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1519</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page3.html#post474594">#31</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-01-15T02:33:03">01-14-2015, 09:33 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">So you already had MT on the car and running?<br>
+Seems like:<br>
+A.Downgrade<br>
+B.Waste of time<br>
+?
+</div>
+</div>
+<div class="post-signature restore">sigpic</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474597" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../image/avatar/default_avatar_large.png" alt="Axel kain" title="Axel kain">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Axel kain</strong>
+</div>
+<div class="usertitle">Moderator</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1221</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page3.html#post474597">#32</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-01-15T14:00:20">01-15-2015, 09:00 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">you do realize you can get a precalibrated HPX for a Z32 spec MAF scale, right?
+</div>
+</div>
+<div class="post-signature restore">Damn dirty angels....these cars!<br><br>
+Current Daily Driver - 86 Turbo.<br>
+Under the cover - THE BANANA… that needs to be re-energized.<br>
+sigpic</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474600" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page3.html#post474600">#33</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-01-15T16:16:28">01-15-2015, 11:16 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<div class="bbcode_postedby">
+Originally posted by <strong>Axel kain</strong>
+<a href="../../../z31-basics/basic-modifications-basic-questions-aka-the-newbie-forum/8569-a-c-drier-low-pressure-switch-question.html#post8569" title="View Post" class="b-icon b-icon__double-arrow-right--blue animate-scroll">View Post</a>
+</div>
+<div class="message">you do realize you can get a precalibrated HPX for a Z32 spec MAF scale, right?</div>
+</div>
+</div>
+</div>Yeah I've seen it but haven't looked into the exact specs. It's probably more like a replacement instead of using an original Z32 maf which is said to be limited to around 500 whp and when using stock size z32 fuel injectors. I haven't bought it yet but so far I'm going with the HPX N1 that's good for over 700whp in a 3&quot; MAF housing. It's in the Nistune drop down menu for MAF selection. Also going with 1000cc injectors.
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474603" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../image/avatar/default_avatar_large.png" alt="les_joey_paul" title="les_joey_paul">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>les_joey_paul</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>743</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page3.html#post474603">#34</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-01-15T18:53:50">01-15-2015, 01:53 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Loving this.
+</div>
+</div>
+<div class="post-signature restore">http://z31performance.com/showthread…2-2-(-now-NA2T<br>
+My build thread (:</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474607" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../image/avatar/default_avatar_large.png" alt="Axel kain" title="Axel kain">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Axel kain</strong>
+</div>
+<div class="usertitle">Moderator</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1221</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page3.html#post474607">#35</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-01-15T19:49:48">01-15-2015, 02:49 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">so far the limits of MAF's have been rumors, and bad ideas. regardless. I cant remember the exact scale, but I do know it is individual to the Z32 spec. I have one on my car, and need to get tuned to see what it is capable of! As well as ZcarGo's once i get the dead spot at 2500 figured out…<br><br>
+I thought the HPX in a 3&quot; tube was rated at 1000, or 1300 hp or something outrageous. either way, cant wait to hear how this goes!
+</div>
+</div>
+<div class="post-signature restore">Damn dirty angels....these cars!<br><br>
+Current Daily Driver - 86 Turbo.<br>
+Under the cover - THE BANANA… that needs to be re-energized.<br>
+sigpic</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474608" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page3.html#post474608">#36</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-01-15T20:15:31">01-15-2015, 03:15 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">On the PMAS-maf.com website it says that the HPX N1 is good for 830 whp in a 3&quot; housing. More than plenty for me. Matt from Nistune has tried it on his R34 with an RB25DET neo engine and he said it works fine with a perfect idle and no drive ability issues. He tried it in a 3&quot; housing mounted before the turbo in a draw through setup.
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474897" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page3.html#post474897">#37</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-02-01T00:08:04">01-31-2015, 07:08 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">I had to redo my intake since I'm adding a MAF. Working on a cold air intake and also keep the hot radiator fan air away from the air filter. Here I made a template out of foam board. Then I'm gonna get it done in aluminum.<br><br>
+20150131_171235.jpg<br><br>
+20150131_171343.jpg
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474905" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../image/avatar/default_avatar_large.png" alt="les_joey_paul" title="les_joey_paul">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>les_joey_paul</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>743</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page3.html#post474905">#38</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-02-01T21:51:40">02-01-2015, 04:51 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">If you cut the front of that air box out, and punch out the rubbery plastic material that is between the top of the radiator and front bumper support, you can accomplish functional cold air induction.
+</div>
+</div>
+<div class="post-signature restore">http://z31performance.com/showthread…2-2-(-now-NA2T<br>
+My build thread (:</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474908" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page3.html#post474908">#39</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-02-01T22:42:11">02-01-2015, 05:42 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">I still have to modify it some. I can also connect a tube from the passenger side headlight bucket. There's a cold air setup already for the factory airbox.
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post474985" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page3.html#post474985">#40</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-02-06T05:03:24">02-06-2015, 12:03 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">New parts for the new setup<br><br>
+Couldn't pass up the good deal.<br>
+20150205_212149.jpg<br><br>
+20150205_212058.jpg
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475006" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page3.html#post475006">#41</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-02-07T23:45:04">02-07-2015, 06:45 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Installed the new ID 1000cc injectors. I'm gonna run them with the Microtech first to check for leaks and see how well they work.<br><br><br>
+20150207_145939.jpg<br><br>
+20150207_145953.jpg<br><br>
+20150207_150003.jpg
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475068" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="PulseCode" title="PulseCode">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>PulseCode</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1522</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page3.html#post475068">#42</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-02-11T02:53:43">02-10-2015, 09:53 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Always a pleasure to see your work.
+</div>
+</div>
+<div class="post-signature restore">Everything is Meaningless.</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475069" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page3.html#post475069">#43</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-02-11T12:12:40">02-11-2015, 07:12 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Thanks for the compliment. Slowly but surely.
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475148" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page3.html#post475148">#44</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-02-14T23:37:22">02-14-2015, 06:37 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Got the flange for the Z32 AAC valve welded on to my Z31 gutted manifold.<br><br>
+Before<br><br>
+20150211_160116.jpg<br><br><br><br>
+After<br><br>
+20150214_152752.jpg<br><br>
+20150214_155133.jpg<br><br>
+20150214_155146.jpg
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475165" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page3.html#post475165">#45</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-02-16T01:07:39">02-15-2015, 08:07 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="axd axd_last-post">
+</div>
+<div class="restore h-wordwrap" itemprop="text">AAC idle valve painted and mounted. No leaks from the new injectors and fuel lines. I also filled the fuel tank with about 8 gallons of 93 octane since the flex fuel setup with Nistune requires an initial tune with 93 octane. Then drain the tank and fill with E85 and retune .<br><br><br>
+20150215_160505.jpg
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="pagenav-container h-clearfix noselect pagenav-container--no-margin">
+<div class="pagenav h-right">
+<a class="b-button b-button--secondary" href="page2.html">Previous</a>
+<a class="b-button b-button--narrow b-button--secondary" href="../12708-how-to-use-a-z32-ecu-in-a-z31-vg30et-with-nistune.html">1</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page2.html">2</a>
+<a class="b-button b-button--narrow b-button--primary page" href="page3.html">3</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page4.html">4</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page5.html">5</a>
+<a class="b-button b-button--secondary" href="page4.html">Next</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="h-clear"></div>
+</div>
+<footer id="footer"><nav id="footer-tabbar" class="h-clearfix js-shrink-event-parent"><ul class="nav-list h-right js-footer-nav-list h-margin-right-xxl b-comp-menu-horizontal"><li><a href="page3.html#" class="js-footer-go-to-top">Go to top</a></li></ul></nav></footer>
+</div>
+<div id="footer-copyright"><div id="footer-vb-copyright">Copyright © 2006–<script>document.write((new Date()).getFullYear());</script>. All rights reserved. <a href="../../../../privacy.html">Privacy Policy</a></div></div>
+</div>
+<script>(function(){let d=document;d.addEventListener("copy",function(){let s=window.getSelection(),c=d.createElement("div");c.style.position="absolute";c.style.left="-99999px";c.innerHTML=s.toString()+"<br><br>Source: <"+"a href='"+d.location.href+"'>"+d.location.href+"<"+"/a>";d.body.appendChild(c);s.selectAllChildren(c);window.setTimeout(function(){d.body.removeChild(c)},0)});})();</script>
+<script>(function(n){let j=window,v=document,k=atob("eW0="),b=atob("aHR0cHM6Ly9tYy55YW5kZXgucnUvbWV0cmlrYQ==")+atob("L3RhZy5qcw==");if(!(k in j)){j[k]=function(){if(!("a" in j[k])){j[k].a=[];}j[k].a.push(arguments);};}j[k].l=Date.now();for(let i=0;i<v.scripts.length;i++){if(v.scripts[i].src===b){return;}}let e=v.createElement("script");e.async=true;e.src=b;v.head.appendChild(e);let y=atob("Y2xp")+atob("Y2ttYXA="),u=atob("dHJhYw==")+atob("a0xpbmtz"),p=atob("YWNjdXJhdGVUcmFja0JvdW4=")+atob("Y2U=");j[k](n,"init",{[y]:true,[u]:true,[p]:true,});})(98235843);</script>
+<script>(function(){let y=document,z=atob("X2FjaQ==")+atob("Yw=="),e=atob("ZGF0")+atob("YVBy")+atob("b3ZpZGVy"),p=atob("aHR0cHM6Ly93d3cuYWNpbnQubmV0L2FjaS5q")+atob("cw==");window[z]={[e]:10};for(let i=0;i<y.scripts.length;i++){if(y.scripts[i].src===p){return;}}let t=y.createElement("script");t.async=true;t.src=p;y.head.appendChild(t);})();</script>
+</body>
+</html>

@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="../../../favicon.png">
+<link rel="stylesheet" href="../../../style/reset.css">
+<link rel="stylesheet" href="../../../style/main.css">
+<link rel="stylesheet" href="../../../assets/styles/z31performance.css">
+<script src="../../../js/header-rollup-554.js"></script>
+<link rel="stylesheet" href="../../../style/post.css">
+<link rel="stylesheet" href="../../../style/gallery.css">
+
+<link rel="canonical" href="545929-digital-dash-controller-power-supply-replacement-effort.html">
+<meta property="og:image" content="/assets/images/z31p-facebook.png">
+<title>Digital Dash Controller / Power Supply replacement effort - Z31 Performance</title>
+<meta name="description" content="Greetings all,
+As a part of my continuing effort to make my own life more difficult, I've spent the past few months reverse engineering the (early) digital cluster and it's power supply.
+You may have seen the previous links to Reddit. Now, Reddit is particularly bad about storing information (only two sites are worse, I">
+</head>
+<body id="vb-page-body" class="l-desktop page126 vb-page view-mode logged-out" itemscope itemtype="http://schema.org/ItemPage">
+<script>vBulletin.Responsive.Debounce.checkBrowserSize();</script>
+<div id="outer-wrapper">
+<div id="wrapper">
+<header class="b-top-background__header-mainnav-subnav"><div class="b-top-background__header-mainnav"><div id="header" class="noselect"><div class="header-cell"><div class="site-logo header-edit-box"><a href="../../../index.html"><img src="../../../image/full/image_1650.png" alt="Logo" title="Powered by vBulletin"></a></div></div><div class="toolbar"><ul class="h-right"><li class="search-container"><form id="searchForm" action="/search" class="h-left" method="get"><div class="h-left"><div class="search-box h-clearfix"><div class="search-term-container"><input type="text" name="q" placeholder="Search" class="search-term b-form-input__input b-form-input__input--shadow"></div><button type="submit" id="btnSearch" class="search-btn" title="Search"><span class="b-icon b-icon__search"></span></button></div></div></form></li></ul></div></div></div></header>
+<nav class="breadcrumbs-wrapper">
+<ul id="breadcrumbs" class="h-clearfix" itemprop="breadcrumb">
+<li class="crumb">
+<a class="crumb-link h-flex-valign-center" href="../../../index.html">
+<span class="b-icon b-icon__home" title="Home"></span>
+</a></li>
+<li class="crumb">
+<span class="b-icon b-icon__chevron-right--gray separator"></span>
+<a class="crumb-link" href="../../z31-repairs-forums.html">Z31 Repairs</a></li>
+<li class="crumb">
+<span class="b-icon b-icon__chevron-right--gray separator"></span>
+<a class="crumb-link" href="../electronics.html">Electronics</a></li>
+</ul>
+</nav>
+<div id="content">
+<div class="canvas-layout-container">
+<div id="canvas-layout-full" class="canvas-layout">
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+<div class="canvas-widget-list section-2 h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+<div class="b-module canvas-widget default-widget page-title-widget widget-no-header-buttons widget-no-border">
+<div class="widget-header h-clearfix">
+<div class="module-title h-left">
+<h1 class="main-title hide-on-editmode">Digital Dash Controller / Power Supply replacement effort</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+<div class="canvas-widget-list section-0 h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+<div class="b-module canvas-widget default-widget conversation-content-widget forum-conversation-content-widget widget-tabs widget-no-border widget-no-header-buttons sticky axd-container">
+<div class="widget-content tab widget-tabs-panel">
+<div id="thread-view-tab" class="conversation-view conversation-thread-view">
+<div class="h-right h-margin-top-l h-margin-bottom-m">
+<div class="pagenav-container h-clearfix noselect pagenav-container--no-margin">
+<div class="pagenav h-right">
+<a class="b-button b-button--narrow b-button--primary page" href="545929-digital-dash-controller-power-supply-replacement-effort.html">1</a>
+<a class="b-button b-button--narrow b-button--secondary" href="545929-digital-dash-controller-power-supply-replacement-effort/page2.html">2</a>
+<a class="b-button b-button--secondary" href="545929-digital-dash-controller-power-supply-replacement-effort/page2.html">Next</a>
+</div>
+</div>
+</div>
+<div class="conversation-content">
+<ul class="conversation-list list-container h-clearfix thread-view">
+<li class="b-post h-restore--on-preview b-post--gallery b-post--first h-left h-clear" itemscope itemtype="http://schema.org/CreativeWork">
+<a id="post545929" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Acmex" title="Acmex">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Acmex</strong>
+</div>
+<div class="usertitle">Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>31</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post545929">#1
+</a>
+</div>
+<div class="b-media__body">
+<h2 class="b-post__title">Digital Dash Controller / Power Supply replacement effort</h2>
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2021-04-20T20:48:05">04-20-2021, 03:48 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="axd axd_first-post">
+</div>
+<div class="restore h-wordwrap" itemprop="text">Greetings all,<br><br>
+As a part of my continuing effort to make my own life more difficult, I've spent the past few months reverse engineering the (early) digital cluster and it's power supply.<br><br>
+You may have seen the previous links to Reddit. Now, Reddit is particularly bad about storing information (only two sites are worse, I think) so this thread will serve as a continuing documentation of my progress, while my <a href="https://github.com/Acmex2564/Z31-DigiDash">Github</a> will document the finished product at each stage when I'm satisfied with the result.<br><br>
+As mentioned on reddit, I received the finished PCBs last weekend and then spent some time assembling them. I also received a few more filament driver demo boards, which will allow me to power and test integration with all the VFD packages (there are five) before designing the actual replacement power supply.<br><br>
+About the filament driver demo boards:<ul><li>Each one has a linear regulator and a TI push-pull driver driving a center-tapped transformer. A negative &quot;bias&quot; voltage is supplied at the center tap, and the result is ~2V AC heating voltage set at -18.5VDC compared to the grids and anodes. A trim pot allows the output to be precisely tuned.</li>
+<li>The demo boards are actually grossly oversized due to an oversight early on. I anticipated between 800mA and 1600mA filament current (depending on the package) based on supply voltage and cold resistance. However, the filaments have a very strong positive temperature coefficient. Thus, actual current is ~100mA. As such, several components aren't needed, and the push-pull transformer can (probably) be downsized to a less expensive part than the $6 Wuerth one I had selected.</li>
+</ul>About the compute module:<ul><li>Teensy 3.5/3.6</li>
+<li>Level-shifting bus drivers translate the 3.3V to the 5V logic expected by the display's HV shift registers</li>
+<li>Parallel-in serial-out shift registers take in the 4 buttons on the front of the cluster, and the discrete inputs from the car</li>
+<li>Separate ADC reads in the 7 analog signals from the car:<ul><li>Supply voltage</li>
+<li>Fuel Level 1</li>
+<li>Fuel Level 2</li>
+<li>Oil Pressure</li>
+<li>Water Temperature</li>
+<li>Manifold Pressure</li>
+<li>Illumination Brightness</li>
+<li>(Bonus! Power supply board temperature [planned])</li>
+</ul></li>
+<li>Protected inputs for the 3 frequency signals from the car:<ul><li>Tachometer</li>
+<li>Speedometer</li>
+<li>Fuel Injection Pulse Width</li>
+</ul></li>
+<li>CANbus transciever available</li>
+<li>SPI EEPROM/flash available for storing misc data, including replacing the odometer with a small display.</li>
+<li>Supply voltages broken up in such a way that should allow powering off everything except the uC itself, which can then enter sleep mode.</li>
+<li>Warning light pass through, or replacement with Neopixels</li>
+</ul>Currently I'm working on the proof-of-life code for the compute module, which is to demonstrate successful communication with all 11 display shift registers, as well as the illumination and odometer display. From there I will progress to actually processing inputs and updating the display in a timely manner. Then comes in-car intregration, and thus dash removal. Again. Hopefully I'll have an indoor work space by that time; it's soon to be hot and muggy down here. I don't have a timeline for any of this. Eventually, yes, they will be available to the public. Not until they're good and damn ready, though.<br><br><br>
+Ultimately, this is part of my much larger effort to develop replacements for most of the electronics in the car. As they come up they'll also be documented in the same way. Currently in queue are:<ul><li>Time Control Unit</li>
+<li>Center Gauge Pod</li>
+<li>Fuel Level Conversion Unit (being developed as a General Module; I'll probably use two or three of them throughout the car)</li>
+</ul>My lock-up control unit has already been gutted and turned into a fan controller. As everyone knows, it's best to have things spread out as far a possible from their controlled load. That makes it more interesting. That's why I also have a RasPi car computer living in that same quarter panel for AA, monitoring, and diagnostics. I also intend to either use either a Nistune'd M30 ECU, or go standalone when the turbo goes in.<br>
+</div>
+</div>
+<div class="h-clearfix">
+<div class="photo-preview b-gallery-thumbnail-list b-gallery-thumbnail-list--preview">
+<span class="b-gallery-thumbnail-list__item" itemscope itemtype="http://schema.org/ImageObject">
+<img class="b-gallery-thumbnail-list__thumbnail" src="../../../image/thumb/image_4767.jpg" alt="">
+</span>
+<span class="b-gallery-thumbnail-list__item" itemscope itemtype="http://schema.org/ImageObject">
+<img class="b-gallery-thumbnail-list__thumbnail" src="../../../image/thumb/image_4768.jpg" alt="">
+</span>
+<span class="b-gallery-thumbnail-list__item" itemscope itemtype="http://schema.org/ImageObject">
+<img class="b-gallery-thumbnail-list__thumbnail" src="../../../image/thumb/image_4769.jpg" alt="">
+</span>
+</div>
+<div class="b-gallery-thumbnail-list__aside">
+<a href="../../../album/545929-digital-dash-controller-power-supply-replacement-effort.html" class="b-photo-count">
+<span class="b-photo-count__count">3</span> <span class="b-photo-count__label">Photos</span>
+</a>
+</div>
+</div>
+</div>
+<div class="b-post__footer h-hide--on-preview h-clear h-padding-bottom-m h-margin-horiz-xl">
+<div class="h-clearfix">
+<hr class="b-divider b-divider--post-controls">
+<ul class="h-margin-top-s h-right b-comp-menu-horizontal b-comp-menu-dropdown--inactive">
+<li class="h-margin-top-xs b-post-control b-post-control--disabled votecount">
+<span class="b-post-control__label">3 likes</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post545937" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="waynedwops42" title="waynedwops42">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>waynedwops42</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>103</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post545937">#2</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2021-04-21T21:33:18">04-21-2021, 04:33 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Impressive work, I don't understand 90% of what you said, but I do want to ask, any thoughts on completely bypassing the converter for the digital fuel sender unit and allowing for the analog fuel level sender to be compatible with the digital dash? Is it possible?
+</div>
+</div>
+<div class="post-signature restore">'85 2+0 Turbo</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post545938" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Acmex" title="Acmex">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Acmex</strong>
+</div>
+<div class="usertitle">Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>31</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post545938">#3</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2021-04-22T02:27:32">04-21-2021, 09:27 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">That will be possible, and is actually what I intend to do for personal use.<br><br>
+Note the four empty footprints under the grey connector -- these are the resistors at the top of the voltage dividers for the passive analog sensors (water temperature, oil pressure, 2x fuel level). Conventional wisdom holds that they should be equal to the value of the sensor at it's measurement midpoint (for linear curves). I elected to make these through-hole components for ease of substitution, though they do also need the higher power handling ability I think.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post545939" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../image/avatar/avatar9845_1.jpeg" alt="kaur" title="kaur">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>kaur</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>310</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post545939">#4</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2021-04-22T14:07:43">04-22-2021, 09:07 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">At that point it also shouldn't be hard to use a different fuel level sender, maybe something more generic. Never know how long the stocks last for the OEM ones.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post545940" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Acmex" title="Acmex">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Acmex</strong>
+</div>
+<div class="usertitle">Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>31</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post545940">#5</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2021-04-22T19:19:58">04-22-2021, 02:19 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Yup -- Z_Karma tabulated tank capacity vs fluid height for me, which means the only action required to retrofit a completely different sender is to mechanically adapt it.<br><br>
+The same goes for all the other sensors such as GM MAP, Honeywell Oil Pressure, speed pickup, etc. The stock temperature thermistors are probably OK, but are also eligible for replacement. Just a matter of mechanically adapting (and providing the sensor supply &amp; ground for active gauges).
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post545951" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="badq45t" title="badq45t">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>badq45t</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>300</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post545951">#6</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2021-05-04T21:27:40">05-04-2021, 04:27 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">here a workaround for the sending unit, this works generic<br>
+<a href="https://www.ebay.com/itm/143709817048?siteid=0&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338689780&toolid=10001&customid=koajlmccad031gm700004">https://www.ebay.com/itm/14370981704…cad031gm700004</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post546040" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Acmex" title="Acmex">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Acmex</strong>
+</div>
+<div class="usertitle">Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>31</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post546040">#7</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2021-06-30T22:03:07">06-30-2021, 05:03 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Sorry for the radio silence. Got myself stuck into some other projects &amp; maintenance.<br><br>
+I have the power supply &amp; data interface working for the &quot;core 4&quot; VFD panels. The trip meter panel, however, keeps exploding the diode used bias the filament. Even two months on I haven't found the short that *has* to be there somewhere.<br><br>
+Additionally, my testing arrangement for the power supply isn't robust enough to survive going in the actual car. Too little headroom for the knockoff buck converters. Throwing together a &quot;production&quot; supply with real components is, unfortunately, a no-go at the moment due to the ongoing supply problems. Shoot, I can't even build a duplicate control board at the moment because I can't get any additional Teensys for the right price.<br><br>
+Someday it'll work out.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post546126" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Acmex" title="Acmex">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Acmex</strong>
+</div>
+<div class="usertitle">Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>31</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post546126">#8</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2021-09-16T04:02:18">09-15-2021, 11:02 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Due to exceptionally heavy rains last week, my basement flooded to a depth of 4.5'. This destroyed all my spinning disks and the power supplies in my server(s). The working copies of the PCB design, as well some of my notes, were stored one of those servers. Data recovery is prohibitively expensive for the spinning rust, but I'm holding out some hope that the solid states in my old desktop have previous versions that are still intact. Technically I can still reorder from OSH, but I don't think I can pull the kicad_pcb files back from them.<br><br>
+This has been a brutal reminder that any backup of data stored in the same location is not a backup at all. I should have been pushing to Github, but was instead only committing to the local copy of the repository and saving to a network location.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post546127" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../image/avatar/avatar23_1.gif" alt="Z_Karma" title="Z_Karma">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Z_Karma</strong>
+</div>
+<div class="usertitle">Administrator</div>
+<div class="b-meter h-margin-top-m highpos" title="is a splendid one to behold">
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>3318</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post546127">#9</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2021-09-16T16:40:51">09-16-2021, 11:40 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Oh shit man, that's fucking brutal. Best of luck in your recovery efforts, not just the project files but the flooding damage in general.<br>
+For my home/work projects i started to share the files on Google Drive across 3 accounts, not so much for redundancy but storage limits.<br>
+</div>
+</div>
+<div class="post-signature restore"><img data-align="none" border="0" src="../../../ext/i.imgur.com/47Zwxgn.jpg" class="bbcode-attachment thumbnail" alt=""><br><br>
+<b>84 AE/Shiro #683/Shiro #820/84 Turbo</b></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post546149" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="badq45t" title="badq45t">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>badq45t</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>300</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post546149">#10</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2021-10-15T21:00:54">10-15-2021, 04:00 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Holy cow didn't see your post! I keep everything in OneDrive or Google Drive now, nothing really local for me anymore.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--gallery h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post546254" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Acmex" title="Acmex">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Acmex</strong>
+</div>
+<div class="usertitle">Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>31</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post546254">#11</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2022-03-16T02:21:34">03-15-2022, 09:21 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Recovered 90% of the design work from the solid states in my old server, which actually still works. Power supply and all. What I did lose was my demo code, which I get to write from scratch instead of just debugging whatever was wrong with the old code.<br><br>
+The chip shortage remains a PITA. The transformer drivers I selected for the prototype have no interchange and currently cannot be found anywhere. Boo. I'm looking at other options, such as the LM4871 (LM9022) or a fleet of FETs + microcontroller to drive them, but every option has it's pros &amp; cons. The only con to the original plan is cost, at ~$12 / VFD channel driven. (Z31 dashes have 5 VFDs. Ouch).<br><br>
+In the meantime, have some teasers of how my other related projects are going. This time they're designed with parts I can currently get!<ul><li>Digital Dash Power Supply</li>
+<li>Time Control Unit (or BCM in modern parlance), featuring CAN and a couple additional outputs.</li>
+<li>Steering Wheel Controls adapter, featuring CAN &amp; resistive output (theoretically).</li>
+<li>A fan controller built into the casing of an old transmission control module. Highly specific to my application (Manual swap, E-Fan w/ Mercedes PWM controller, additional pressure sensors, CAN parameter reporting to head unit).</li>
+<li>HVAC controller replacement designed around the cheap Mega2560Pro modules. Featuring CAN, OneWire, and 3 or 4 modern displays (IPS, OLED) to fit the space occupied by the original LCD.</li>
+<li>Digital Dash LED-based warning lights module to go with my controller.</li>
+</ul>
+</div>
+</div>
+<div class="h-clearfix">
+<div class="photo-preview b-gallery-thumbnail-list b-gallery-thumbnail-list--preview">
+<span class="b-gallery-thumbnail-list__item" itemscope itemtype="http://schema.org/ImageObject">
+<img class="b-gallery-thumbnail-list__thumbnail" src="../../../image/thumb/image_4822.png" title="Power Supply Preview" alt="Power Supply Preview">
+</span>
+<span class="b-gallery-thumbnail-list__item" itemscope itemtype="http://schema.org/ImageObject">
+<img class="b-gallery-thumbnail-list__thumbnail" src="../../../image/thumb/image_4821.png" title="Timer Control Previewhttps://z31performance.com/filedata/fetch?filedataid=4826&amp;type=thumb" alt="Timer Control Previewhttps://z31performance.com/filedata/fetch?filedataid=4826&amp;type=thumb">
+</span>
+<span class="b-gallery-thumbnail-list__item" itemscope itemtype="http://schema.org/ImageObject">
+<img class="b-gallery-thumbnail-list__thumbnail" src="../../../image/thumb/image_4825.png" title="Steering Wheel Controls Preview" alt="Steering Wheel Controls Preview">
+</span>
+<span class="b-gallery-thumbnail-list__item" itemscope itemtype="http://schema.org/ImageObject">
+<img class="b-gallery-thumbnail-list__thumbnail" src="../../../image/thumb/image_4824.png" title="Retrofit Fan Controller Preview" alt="Retrofit Fan Controller Preview">
+</span>
+<span class="b-gallery-thumbnail-list__item" itemscope itemtype="http://schema.org/ImageObject">
+<img class="b-gallery-thumbnail-list__thumbnail" src="../../../image/thumb/image_4823.png" title="HVAC Controller Preview" alt="HVAC Controller Preview">
+</span>
+<span class="b-gallery-thumbnail-list__item" itemscope itemtype="http://schema.org/ImageObject">
+<img class="b-gallery-thumbnail-list__thumbnail" src="../../../image/thumb/image_4826.png" alt="">
+</span>
+</div>
+<div class="b-gallery-thumbnail-list__aside">
+<a href="../../../album/545929-digital-dash-controller-power-supply-replacement-effort.html" class="b-photo-count">
+<span class="b-photo-count__count">6</span> <span class="b-photo-count__label">Photos</span>
+</a>
+</div>
+</div>
+</div>
+<div class="b-post__footer h-hide--on-preview h-clear h-padding-bottom-m h-margin-horiz-xl">
+<div class="h-clearfix">
+<hr class="b-divider b-divider--post-controls">
+<ul class="h-margin-top-s h-right b-comp-menu-horizontal b-comp-menu-dropdown--inactive">
+<li class="h-margin-top-xs b-post-control b-post-control--disabled votecount">
+<span class="b-post-control__label">1 like</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post546263" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Acmex" title="Acmex">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Acmex</strong>
+</div>
+<div class="usertitle">Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>31</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post546263">#12</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2022-03-25T05:03:04">03-25-2022, 12:03 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Boards submitted to China for production. Bit of a shame, but western PCB production is simply too expensive for the likes of the HVAC main board. Would have been $100+ for that board alone, whereas with JLC I can get all the boards in the batch for $60 (30 + 30 express shipping).<br><br>
+In this batch:<ul><li>HVAC Controller</li>
+<li>SWC Adapter</li>
+<li>Consult&lt;-&gt;CAN Bridge</li>
+<li>ECU Breakout</li>
+<li>My fan controller thing</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="b-comment-entry h-padding-xxl h-padding-top-xl comment-entry-box h-hide has-comments">
+<h2 class="h-margin-bottom-xl">Comment</h2>
+<textarea class="b-comment-entry__textbox autogrow" placeholder="Type your comment here"></textarea>
+<div class="b-button-group h-margin-top-xl">
+<button type="button" id="btnPostComment-546263" class="b-button b-button--primary">Post</button>
+<button type="button" id="btnPostCommentCancel-546263" class="b-button">Cancel</button>
+</div>
+</div>
+<div class="b-comments h-margin-bottom-xl h-clearfix">
+<div class="b-comments__header b-media h-padding-vert-m h-padding-horiz-l">
+<div class="b-media__img--rev h-hide">
+<label>
+</label>
+<span class="b-comments__pagination--up h-margin-left-s h-hide-imp" title="See previous comments"><span class="b-icon b-icon__arrow-up-m"></span></span>
+</div>
+<div class="h-margin-left-l b-media__body">
+<span class="b-icon b-icon__speech-single h-margin-right-s"></span>
+<label class="h-align-top">
+1 comment
+</label>
+</div>
+</div>
+<ul class="b-comments__comments h-left" itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+<li class="b-post b-comment h-padding-l h-left h-clear">
+<a id="post546264" class="anchor"></a>
+<div class="b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-margin-bottom-l">
+<div class="b-media__img">
+<img src="../../../image/avatar/avatar23_1.gif" alt="Z_Karma">
+</div>
+<div class="b-media__img--rev">
+<div class="comment-count">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post546264">#12.<span>1</span></a>
+</div>
+</div>
+<div class="b-media__body">
+<div class="h-margin-bottom-xs">
+Z_Karma
+<span>commented</span>
+</div>
+<div class="b-post__timestamp">03-25-2022, 02:07 PM</div>
+</div>
+</div>
+<div>
+<div class="h-clear h-wordwrap" itemprop="commentText">Yeah, lead-times and shortages are still pretty severe. My employer has barrels of their scrapped/down-rev PCBA's just in case they need to harvest hard to find components.
+</div>
+</div>
+</div>
+</li>
+</ul>
+<div class="b-comments__footer b-media h-padding-vert-m h-padding-horiz-l h-clear h-hide">
+<div class="b-media__img--rev">
+<label>
+</label>
+<span class="b-comments__pagination--down h-margin-left-s" title="See next comments"><span class="b-icon b-icon__arrow-down-m"></span></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--gallery h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post546265" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Acmex" title="Acmex">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Acmex</strong>
+</div>
+<div class="usertitle">Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>31</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post546265">#13</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2022-03-27T16:43:44">03-27-2022, 11:43 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">18 months ago I demonstrated an arduino nano talking to individual VFD panels. Today I finally got back to that point, with the new controller and all four panels.<br><br>
+I also bought some color filters. I cut in a red one, hoping to get a nice amber like the clock. Sadly, the result was pink. It turns out the color spectrum is difficult. I may reach out to an actual VFD manufacturer and see if they can supply optimized filters.
+</div>
+</div>
+<div class="h-clearfix">
+<div class="photo-preview b-gallery-thumbnail-list b-gallery-thumbnail-list--preview">
+<span class="b-gallery-thumbnail-list__item" itemscope itemtype="http://schema.org/ImageObject">
+<img class="b-gallery-thumbnail-list__thumbnail" src="../../../image/thumb/image_4830.jpg" alt="">
+</span>
+<span class="b-gallery-thumbnail-list__item" itemscope itemtype="http://schema.org/ImageObject">
+<img class="b-gallery-thumbnail-list__thumbnail" src="../../../image/thumb/image_4829.jpg" alt="">
+</span>
+<span class="b-gallery-thumbnail-list__item" itemscope itemtype="http://schema.org/ImageObject">
+<img class="b-gallery-thumbnail-list__thumbnail" src="../../../image/thumb/image_4831.jpg" alt="">
+</span>
+</div>
+<div class="b-gallery-thumbnail-list__aside">
+<a href="../../../album/545929-digital-dash-controller-power-supply-replacement-effort.html" class="b-photo-count">
+<span class="b-photo-count__count">3</span> <span class="b-photo-count__label">Photos</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post546269" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../image/avatar/avatar23_1.gif" alt="Z_Karma" title="Z_Karma">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Z_Karma</strong>
+</div>
+<div class="usertitle">Administrator</div>
+<div class="b-meter h-margin-top-m highpos" title="is a splendid one to behold">
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+<div class="b-meter__bar b-meter__bar--selected"></div>
+</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>3318</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post546269">#14</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2022-03-28T16:29:33">03-28-2022, 11:29 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">When I was playing around with coloring my VFD, I bought a small Roscolux Swatchbook from a local stage lighting supply. Gel filters used for oldschool par-cans are heat and shrink resistant.<br>
+You can stack filters for custom colors as well.
+</div>
+</div>
+<div class="post-signature restore"><img data-align="none" border="0" src="../../../ext/i.imgur.com/47Zwxgn.jpg" class="bbcode-attachment thumbnail" alt=""><br><br>
+<b>84 AE/Shiro #683/Shiro #820/84 Turbo</b></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--gallery h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post546278" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Acmex" title="Acmex">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Acmex</strong>
+</div>
+<div class="usertitle">Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>31</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="545929-digital-dash-controller-power-supply-replacement-effort.html#post546278">#15</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2022-04-06T21:45:28">04-06-2022, 04:45 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="axd axd_last-post">
+</div>
+<div class="restore h-wordwrap" itemprop="text">Boards arrived after bouncing all over SEA for a week. Nailed the HVAC board dimensions, very pleased.<br><br>
+We shall see how pleased I remain.
+</div>
+</div>
+<div class="h-clearfix">
+<div class="photo-preview b-gallery-thumbnail-list b-gallery-thumbnail-list--preview">
+<span class="b-gallery-thumbnail-list__item" itemscope itemtype="http://schema.org/ImageObject">
+<img class="b-gallery-thumbnail-list__thumbnail" src="../../../image/thumb/image_4833.jpg" alt="">
+</span>
+<span class="b-gallery-thumbnail-list__item" itemscope itemtype="http://schema.org/ImageObject">
+<img class="b-gallery-thumbnail-list__thumbnail" src="../../../image/thumb/image_4834.jpg" alt="">
+</span>
+<span class="b-gallery-thumbnail-list__item" itemscope itemtype="http://schema.org/ImageObject">
+<img class="b-gallery-thumbnail-list__thumbnail" src="../../../image/thumb/image_4835.jpg" alt="">
+</span>
+</div>
+<div class="b-gallery-thumbnail-list__aside">
+<a href="../../../album/545929-digital-dash-controller-power-supply-replacement-effort.html" class="b-photo-count">
+<span class="b-photo-count__count">3</span> <span class="b-photo-count__label">Photos</span>
+</a>
+</div>
+</div>
+</div>
+<div class="b-post__footer h-hide--on-preview h-clear h-padding-bottom-m h-margin-horiz-xl">
+<div class="h-clearfix">
+<hr class="b-divider b-divider--post-controls">
+<ul class="h-margin-top-s h-right b-comp-menu-horizontal b-comp-menu-dropdown--inactive">
+<li class="h-margin-top-xs b-post-control b-post-control--disabled votecount">
+<span class="b-post-control__label">1 like</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="pagenav-container h-clearfix noselect pagenav-container--no-margin">
+<div class="pagenav h-right">
+<a class="b-button b-button--narrow b-button--primary page" href="545929-digital-dash-controller-power-supply-replacement-effort.html">1</a>
+<a class="b-button b-button--narrow b-button--secondary" href="545929-digital-dash-controller-power-supply-replacement-effort/page2.html">2</a>
+<a class="b-button b-button--secondary" href="545929-digital-dash-controller-power-supply-replacement-effort/page2.html">Next</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="h-clear"></div>
+</div>
+<footer id="footer"><nav id="footer-tabbar" class="h-clearfix js-shrink-event-parent"><ul class="nav-list h-right js-footer-nav-list h-margin-right-xxl b-comp-menu-horizontal"><li><a href="545929-digital-dash-controller-power-supply-replacement-effort.html#" class="js-footer-go-to-top">Go to top</a></li></ul></nav></footer>
+</div>
+<div id="footer-copyright"><div id="footer-vb-copyright">Copyright © 2006–<script>document.write((new Date()).getFullYear());</script>. All rights reserved. <a href="../../../privacy.html">Privacy Policy</a></div></div>
+</div>
+<script>(function(){let d=document;d.addEventListener("copy",function(){let s=window.getSelection(),c=d.createElement("div");c.style.position="absolute";c.style.left="-99999px";c.innerHTML=s.toString()+"<br><br>Source: <"+"a href='"+d.location.href+"'>"+d.location.href+"<"+"/a>";d.body.appendChild(c);s.selectAllChildren(c);window.setTimeout(function(){d.body.removeChild(c)},0)});})();</script>
+<script>(function(n){let j=window,v=document,k=atob("eW0="),b=atob("aHR0cHM6Ly9tYy55YW5kZXgucnUvbWV0cmlrYQ==")+atob("L3RhZy5qcw==");if(!(k in j)){j[k]=function(){if(!("a" in j[k])){j[k].a=[];}j[k].a.push(arguments);};}j[k].l=Date.now();for(let i=0;i<v.scripts.length;i++){if(v.scripts[i].src===b){return;}}let e=v.createElement("script");e.async=true;e.src=b;v.head.appendChild(e);let y=atob("Y2xp")+atob("Y2ttYXA="),u=atob("dHJhYw==")+atob("a0xpbmtz"),p=atob("YWNjdXJhdGVUcmFja0JvdW4=")+atob("Y2U=");j[k](n,"init",{[y]:true,[u]:true,[p]:true,});})(98235843);</script>
+<script>(function(){let y=document,z=atob("X2FjaQ==")+atob("Yw=="),e=atob("ZGF0")+atob("YVBy")+atob("b3ZpZGVy"),p=atob("aHR0cHM6Ly93d3cuYWNpbnQubmV0L2FjaS5q")+atob("cw==");window[z]={[e]:10};for(let i=0;i<y.scripts.length;i++){if(y.scripts[i].src===p){return;}}let t=y.createElement("script");t.async=true;t.src=p;y.head.appendChild(t);})();</script>
+</body>
+</html>

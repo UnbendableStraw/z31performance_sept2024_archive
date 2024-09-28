@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="../../../../favicon.png">
+<link rel="stylesheet" href="../../../../style/reset.css">
+<link rel="stylesheet" href="../../../../style/main.css">
+<link rel="stylesheet" href="../../../../assets/styles/z31performance.css">
+<script src="../../../../js/header-rollup-554.js"></script>
+<link rel="stylesheet" href="../../../../style/post.css">
+
+<link rel="canonical" href="page4.html">
+<meta property="og:image" content="/assets/images/z31p-facebook.png">
+<title>How to use a Z32 ECU in a Z31 VG30ET with NIStune - Z31 Performance</title>
+<meta name="description" content="">
+</head>
+<body id="vb-page-body" class="l-desktop page104 vb-page view-mode logged-out" itemscope itemtype="http://schema.org/ItemPage">
+<script>vBulletin.Responsive.Debounce.checkBrowserSize();</script>
+<div id="outer-wrapper">
+<div id="wrapper">
+<header class="b-top-background__header-mainnav-subnav"><div class="b-top-background__header-mainnav"><div id="header" class="noselect"><div class="header-cell"><div class="site-logo header-edit-box"><a href="../../../../index.html"><img src="../../../../image/full/image_1650.png" alt="Logo" title="Powered by vBulletin"></a></div></div><div class="toolbar"><ul class="h-right"><li class="search-container"><form id="searchForm" action="/search" class="h-left" method="get"><div class="h-left"><div class="search-box h-clearfix"><div class="search-term-container"><input type="text" name="q" placeholder="Search" class="search-term b-form-input__input b-form-input__input--shadow"></div><button type="submit" id="btnSearch" class="search-btn" title="Search"><span class="b-icon b-icon__search"></span></button></div></div></form></li></ul></div></div></div></header>
+<nav class="breadcrumbs-wrapper">
+<ul id="breadcrumbs" class="h-clearfix" itemprop="breadcrumb">
+<li class="crumb">
+<a class="crumb-link h-flex-valign-center" href="../../../../index.html">
+<span class="b-icon b-icon__home" title="Home"></span>
+</a></li>
+<li class="crumb">
+<span class="b-icon b-icon__chevron-right--gray separator"></span>
+<a class="crumb-link" href="../../../z31-performance-upgrade-forums.html">Z31 Performance/Upgrades</a></li>
+<li class="crumb">
+<span class="b-icon b-icon__chevron-right--gray separator"></span>
+<a class="crumb-link" href="../../engine-management.html">Engine Management</a></li>
+</ul>
+</nav>
+<div id="content">
+<div class="canvas-layout-container">
+<div id="canvas-layout-full" class="canvas-layout">
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+<div class="canvas-widget-list section-2 h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+<div class="b-module canvas-widget default-widget page-title-widget widget-no-header-buttons widget-no-border">
+<div class="widget-header h-clearfix">
+<div class="module-title h-left">
+<h1 class="main-title hide-on-editmode">How to use a Z32 ECU in a Z31 VG30ET with NIStune</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="canvas-layout-row l-row no-columns h-clearfix">
+<div class="canvas-widget-list section-0 h-clearfix l-col__large-12 l-col__small--full l-wide-column">
+<div class="b-module canvas-widget default-widget conversation-content-widget forum-conversation-content-widget widget-tabs widget-no-border widget-no-header-buttons axd-container">
+<div class="widget-content tab widget-tabs-panel">
+<div id="thread-view-tab" class="conversation-view conversation-thread-view">
+<div class="h-right h-margin-top-l h-margin-bottom-m">
+<div class="pagenav-container h-clearfix noselect pagenav-container--no-margin">
+<div class="pagenav h-right">
+<a class="b-button b-button--secondary" href="page3.html">Previous</a>
+<a class="b-button b-button--narrow b-button--secondary" href="../12708-how-to-use-a-z32-ecu-in-a-z31-vg30et-with-nistune.html">1</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page2.html">2</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page3.html">3</a>
+<a class="b-button b-button--narrow b-button--primary page" href="page4.html">4</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page5.html">5</a>
+<a class="b-button b-button--secondary" href="page5.html">Next</a>
+</div>
+</div>
+</div>
+<div class="conversation-content">
+<ul class="conversation-list list-container h-clearfix thread-view">
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475174" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../image/avatar/default_avatar_large.png" alt="Axel kain" title="Axel kain">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Axel kain</strong>
+</div>
+<div class="usertitle">Moderator</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1221</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page4.html#post475174">#46</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-02-16T04:42:28">02-15-2015, 11:42 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">I have to ask why you would mount it on the opposite side of the metered air piping? why not near the stock location so you can easily draw from the intake piping?
+</div>
+</div>
+<div class="post-signature restore">Damn dirty angels....these cars!<br><br>
+Current Daily Driver - 86 Turbo.<br>
+Under the cover - THE BANANA… that needs to be re-energized.<br>
+sigpic</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475176" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page4.html#post475176">#47</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-02-16T05:13:27">02-16-2015, 12:13 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">It won't fit in the stock z31 location. Right now it's not electrically hooked up and has 2 rubber plugs on the inlet. I need to connect the hose to the back port. (The one on the left with the black cap on it.)<br><br>
+20150215_160523.jpg<br><br><br><br>
+All I have to do is run a hose from the I/C pipe before the throttle body around the back of the engine to the Z32 idle valve. I already have some fittings welded to the intercooler pipe.
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475181" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../image/avatar/default_avatar_large.png" alt="Axel kain" title="Axel kain">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Axel kain</strong>
+</div>
+<div class="usertitle">Moderator</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1221</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page4.html#post475181">#48</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-02-16T14:00:52">02-16-2015, 09:00 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">similar to the old AAC valve I guess, fix up a hard pipe, and run it with a 1/8&quot; too, for that vacuum hose there too.
+</div>
+</div>
+<div class="post-signature restore">Damn dirty angels....these cars!<br><br>
+Current Daily Driver - 86 Turbo.<br>
+Under the cover - THE BANANA… that needs to be re-energized.<br>
+sigpic</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475187" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="FlawleZ" title="FlawleZ">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>FlawleZ</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1971</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page4.html#post475187">#49</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-02-16T15:13:06">02-16-2015, 10:13 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Excited to see your results Rick…but I'm curious where you've read somewhere the Z32 MAF maxes at 500? I made 545 on a Z31 MAF and it still had room to go. I've seen upwards of 700+ on a Z32 MAF.
+</div>
+</div>
+<div class="post-signature restore"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+Originally posted by <b>Andrew84zx</b><br>
+tell her your car is so fast it will make her panties fly off
+</div>
+</div>
+</div><b><span style="color:#BF0000">545 RWHP &amp; 540 RWTQ</span></b><br>
+<img src="../../../../ext/i.imgur.com/zZHQION.jpg" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475191" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page4.html#post475191">#50</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-02-16T15:41:22">02-16-2015, 10:41 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<div class="bbcode_postedby">
+Originally posted by <strong>FlawleZ</strong>
+<a href="../../../z31-basics/basic-modifications-basic-questions-aka-the-newbie-forum/9275-fuel-system-recall.html#post9275" title="View Post" class="b-icon b-icon__double-arrow-right--blue animate-scroll">View Post</a>
+</div>
+<div class="message">Excited to see your results Rick…but I'm curious where you've read somewhere the Z32 MAF maxes at 500? I made 545 on a Z31 MAF and it still had room to go. I've seen upwards of 700+ on a Z32 MAF.</div>
+</div>
+</div>
+</div>I see conflicting results but usually in the 500's. I'm sure that the 700+ must have been with a Selin MAF translator that effectively doubles the MAF capacity on a dual intake Z32.<br>
+So to avoid maxing out the Z32 MAF and problems with reversion when you use a recirculating BOV, I'm just going with a PMAS HPX N-1 MAF.<br>
+Like the one in the new Nistune videos<br><br>
+<a href="https://www.youtube.com/watch?v=xVMJte7UOdA">https://www.youtube.com/watch?v=xVMJte7UOdA</a><br><br>
+<a href="https://www.youtube.com/watch?v=9HbmYcZj-bg">https://www.youtube.com/watch?v=9HbmYcZj-bg</a>
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475798" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="boosted300" title="boosted300">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>boosted300</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>195</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page4.html#post475798">#51</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-03-06T03:07:08">03-05-2015, 10:07 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<div class="bbcode_postedby">
+Originally posted by <strong>Rick88ss</strong>
+<a href="../../../z31-basics/basic-modifications-basic-questions-aka-the-newbie-forum/8942-removing-the-dash.html#post8942" title="View Post" class="b-icon b-icon__double-arrow-right--blue animate-scroll">View Post</a>
+</div>
+<div class="message">I still have to modify it some. I can also connect a tube from the passenger side headlight bucket. There's a cold air setup already for the factory airbox.</div>
+</div>
+</div>
+</div>go with the setup I used to have bro....<br><br>
+It's a combo of what les and you are saying…<br><br>
+It's open in the front and it also has a hole in the side that draws from factory CAI location…<br><br>
+you should also move it off center as there is a hood seam that runs right down the middle of this area and /I used it to form a seal around the airbox so that when the hood is closed, it only draws external cold(er) air<br><br>
+<img class="bbcode-attachment" src="../../../../ext/i174.photobucket.com/albums/w116/boosted300/87-300ZX-Turbo/IMG_2369.jpg" border="0" alt=""><br><br>
+(look at my old ass HKS Intercooler from 1989 lol)<br><br><br>
+but back on topic, your fuel system is trick as hell, I can't wait to see how flex fuel works
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475800" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../image/avatar/default_avatar_large.png" alt="les_joey_paul" title="les_joey_paul">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>les_joey_paul</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>743</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page4.html#post475800">#52</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-03-06T03:28:33">03-05-2015, 10:28 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">I get what you are saying but I'd try and do it on the other side.... because you have that hot radiator hose right there.
+</div>
+</div>
+<div class="post-signature restore">http://z31performance.com/showthread…2-2-(-now-NA2T<br>
+My build thread (:</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475802" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="boosted300" title="boosted300">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>boosted300</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>195</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page4.html#post475802">#53</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-03-06T03:41:33">03-05-2015, 10:41 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<div class="bbcode_postedby">
+Originally posted by <strong>les_joey_paul</strong>
+</div>
+<div class="message">I get what you are saying but I'd try and do it on the other side.... because you have that hot radiator hose right there.</div>
+</div>
+</div>
+</div>there's really not that much heat radiating from that small hose. I considered that initially and I held my hand near it at operating temp and you really couldn't feel much heat, certainly not enough to outweigh the cold air from the factory hole…but I suppose I could wrap the hose with heat shielding like I did with fuel lines…great tip!<br><br>
+(sorry for the threadjack Rick!)
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475804" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../image/avatar/default_avatar_large.png" alt="les_joey_paul" title="les_joey_paul">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>les_joey_paul</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>743</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page4.html#post475804">#54</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-03-06T03:57:10">03-05-2015, 10:57 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Yeah a few degree makes a difference it would only make more radiant heat at a stop. Me being in Florida that hose gets HOT with engine warmed up. I'm going to have to investigate further how the headlight bucket ducts into the intake area.
+</div>
+</div>
+<div class="post-signature restore">http://z31performance.com/showthread…2-2-(-now-NA2T<br>
+My build thread (:</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475806" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="boosted300" title="boosted300">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>boosted300</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>195</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page4.html#post475806">#55</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-03-06T04:07:17">03-05-2015, 11:07 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<div class="bbcode_postedby">
+Originally posted by <strong>les_joey_paul</strong>
+<a href="../../../z31-basics/basic-modifications-basic-questions-aka-the-newbie-forum/9987-getting-new-tires.html#post9987" title="View Post" class="b-icon b-icon__double-arrow-right--blue animate-scroll">View Post</a>
+</div>
+<div class="message">Yeah a few degree makes a difference it would only make more radiant heat at a stop. Me being in Florida that hose gets HOT with engine warmed up. I'm going to have to investigate further how the headlight bucket ducts into the intake area.</div>
+</div>
+</div>
+</div>I feel ya…Rick and I are both in Miami<img src="../../../../core/images/smilies/cool.png" border="0" alt="" title="Cool" smilieid="6" class="inlineimg">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475807" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page4.html#post475807">#56</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-03-06T04:12:07">03-05-2015, 11:12 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">I'm gonna get it done in about 2 weeks. Waiting for income tax return.
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475808" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../image/avatar/default_avatar_large.png" alt="les_joey_paul" title="les_joey_paul">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>les_joey_paul</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>743</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page4.html#post475808">#57</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-03-06T04:27:58">03-05-2015, 11:27 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Ohhhhhh nice. Are you guys going to the auto combine meet on the 15th?<br>
+Also I think I might try creating a duct on the driver side headlight similar to yours boosted300.
+</div>
+</div>
+<div class="post-signature restore">http://z31performance.com/showthread…2-2-(-now-NA2T<br>
+My build thread (:</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475812" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="ShamWow" title="ShamWow">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>ShamWow</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>1905</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page4.html#post475812">#58</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-03-06T13:28:55">03-06-2015, 08:28 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text">Ive been using that MAF for awhile with nistune and it works good.<br><br>
+Why the change from running microtech to nistune? I bought a haltech to go the opposite direction
+</div>
+</div>
+<div class="post-signature restore"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+&quot;produce first.talk second.&quot;
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post475813" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page4.html#post475813">#59</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-03-06T13:38:35">03-06-2015, 08:38 AM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="restore h-wordwrap" itemprop="text"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container b-icon b-icon__ldquo-l--gray"></div>
+<div class="bbcode_postedby">
+Originally posted by <strong>ShamWow</strong>
+<a href="../../engine-mechanical-aa/9996-turbo-selection-help.html#post9996" title="View Post" class="b-icon b-icon__double-arrow-right--blue animate-scroll">View Post</a>
+</div>
+<div class="message">Ive been using that MAF for awhile with nistune and it works good.<br><br>
+Why the change from running microtech to nistune? I bought a haltech to go the opposite direction</div>
+</div>
+</div>
+</div>I want the flex fuel setup. Also I want a more stock like running car when idling and with the A/C running. It seems like the Microtech is better for racing and cars without A/C. It does work with the ac but not smooth. No flex fuel with Microtech and support sux
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="b-post h-restore--on-preview b-post--text h-left h-clear" itemscope itemtype="http://schema.org/Comment">
+<a id="post477335" class="anchor"></a>
+<div class="l-row l-row__fixed--left">
+<div class="l-col__fixed-3 l-col__small--full h-hide--on-preview h-padding-right-l">
+<div class="userinfo b-userinfo b-post__hide-when-deleted" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<img src="../../../../core/images/default/default_avatar_medium.png" width="64" height="64" alt="Rick88ss" title="Rick88ss">
+<div class="b-userinfo__details">
+<div class="author h-text-size--14">
+<strong>Rick88ss</strong>
+</div>
+<div class="usertitle">Senior Member</div>
+<ul class="b-userinfo__additional-info-block h-margin-top-xl">
+<li class="b-userinfo__additional-info"><label>Posts:</label> <span>2433</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="l-col__flex-3 l-col__small--full h-restore--on-preview">
+<div class="b-post__body h-restore--on-preview h-padding-horiz-xxl h-padding-top-xl h-padding-bottom-m h-clearfix">
+<div class="b-post__arrow b-post__hide-when-deleted"></div>
+<div class="b-post__content b-post__hide-when-deleted">
+<hr class="b-divider--section">
+<div class="b-media h-hide--on-preview">
+<div class="b-media__img--rev">
+<a class="b-post__count" href="page4.html#post477335">#60</a>
+</div>
+<div class="b-media__body">
+<div class="b-post__timestamp"><time itemprop="dateCreated" datetime="2015-04-13T01:01:42">04-12-2015, 08:01 PM</time></div>
+</div>
+</div>
+<div class="h-padding-vert-xl">
+<div class="axd axd_last-post">
+</div>
+<div class="restore h-wordwrap" itemprop="text">Update:<br>
+Finally got around to getting the air filter heat shield made. Also had a 1.5&quot; tube welded on before the turbo inlet to recirculate the BOV since I'm using a HPX N1 MAF before the turbo.<br>
+I still need to paint the heat shield and make a hole in the side to direct some cold air in from the passenger side headlight bucket.<br><br>
+<img class="bbcode-attachment" src="../../../../ext/i103.photobucket.com/albums/m147/Rick88ss/Mobile-Uploads/20150412_175800_zpsc0ulw3xa.jpg" border="0" alt=""><br><br><br>
+<img class="bbcode-attachment" src="../../../../ext/i103.photobucket.com/albums/m147/Rick88ss/Mobile-Uploads/20150412_175832_zpspzonimgg.jpg" border="0" alt=""><br><br><br>
+<img class="bbcode-attachment" src="../../../../ext/i103.photobucket.com/albums/m147/Rick88ss/Mobile-Uploads/20150412_175911_zpscw2g4lvv.jpg" border="0" alt=""><br><br><br>
+<img class="bbcode-attachment" src="../../../../ext/i103.photobucket.com/albums/m147/Rick88ss/Mobile-Uploads/20150412_175941_zpsgej9fsns.jpg" border="0" alt=""><br><br><br>
+<img class="bbcode-attachment" src="../../../../ext/i103.photobucket.com/albums/m147/Rick88ss/Mobile-Uploads/20150412_180010_zpsbnmo6dxg.jpg" border="0" alt="">
+</div>
+</div>
+<div class="post-signature restore">Shiro #443<br><br>
+<img src="../../../../ext/i.imgur.com/BspY5.png" border="0" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="pagenav-container h-clearfix noselect pagenav-container--no-margin">
+<div class="pagenav h-right">
+<a class="b-button b-button--secondary" href="page3.html">Previous</a>
+<a class="b-button b-button--narrow b-button--secondary" href="../12708-how-to-use-a-z32-ecu-in-a-z31-vg30et-with-nistune.html">1</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page2.html">2</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page3.html">3</a>
+<a class="b-button b-button--narrow b-button--primary page" href="page4.html">4</a>
+<a class="b-button b-button--narrow b-button--secondary" href="page5.html">5</a>
+<a class="b-button b-button--secondary" href="page5.html">Next</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="h-clear"></div>
+</div>
+<footer id="footer"><nav id="footer-tabbar" class="h-clearfix js-shrink-event-parent"><ul class="nav-list h-right js-footer-nav-list h-margin-right-xxl b-comp-menu-horizontal"><li><a href="page4.html#" class="js-footer-go-to-top">Go to top</a></li></ul></nav></footer>
+</div>
+<div id="footer-copyright"><div id="footer-vb-copyright">Copyright © 2006–<script>document.write((new Date()).getFullYear());</script>. All rights reserved. <a href="../../../../privacy.html">Privacy Policy</a></div></div>
+</div>
+<script>(function(){let d=document;d.addEventListener("copy",function(){let s=window.getSelection(),c=d.createElement("div");c.style.position="absolute";c.style.left="-99999px";c.innerHTML=s.toString()+"<br><br>Source: <"+"a href='"+d.location.href+"'>"+d.location.href+"<"+"/a>";d.body.appendChild(c);s.selectAllChildren(c);window.setTimeout(function(){d.body.removeChild(c)},0)});})();</script>
+<script>(function(n){let j=window,v=document,k=atob("eW0="),b=atob("aHR0cHM6Ly9tYy55YW5kZXgucnUvbWV0cmlrYQ==")+atob("L3RhZy5qcw==");if(!(k in j)){j[k]=function(){if(!("a" in j[k])){j[k].a=[];}j[k].a.push(arguments);};}j[k].l=Date.now();for(let i=0;i<v.scripts.length;i++){if(v.scripts[i].src===b){return;}}let e=v.createElement("script");e.async=true;e.src=b;v.head.appendChild(e);let y=atob("Y2xp")+atob("Y2ttYXA="),u=atob("dHJhYw==")+atob("a0xpbmtz"),p=atob("YWNjdXJhdGVUcmFja0JvdW4=")+atob("Y2U=");j[k](n,"init",{[y]:true,[u]:true,[p]:true,});})(98235843);</script>
+<script>(function(){let y=document,z=atob("X2FjaQ==")+atob("Yw=="),e=atob("ZGF0")+atob("YVBy")+atob("b3ZpZGVy"),p=atob("aHR0cHM6Ly93d3cuYWNpbnQubmV0L2FjaS5q")+atob("cw==");window[z]={[e]:10};for(let i=0;i<y.scripts.length;i++){if(y.scripts[i].src===p){return;}}let t=y.createElement("script");t.async=true;t.src=p;y.head.appendChild(t);})();</script>
+</body>
+</html>
